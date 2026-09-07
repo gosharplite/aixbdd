@@ -9,7 +9,7 @@
 | --- | --- | --- | --- |
 | MODIFY | `specs/truth/techstack.md` -> `測試與驗證` | 補上前端 BDD 會驗證聊天區塊。 | 本輪新增準備頁與對戰頁聊天驗收。 |
 
-## /api-plan
+## /axb-api-plan
 
 | 動作 | Truth 規格 | 改動摘要 | 原因 |
 | --- | --- | --- | --- |

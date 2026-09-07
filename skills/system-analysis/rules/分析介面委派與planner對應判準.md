@@ -22,7 +22,7 @@
 
 委派順序：
 1. 先呼叫 `/ui-plan`
-2. 等 Wave 1 完成後，再呼叫 `/api-plan`
+2. 等 Wave 1 完成後，再呼叫 `/axb-api-plan`
 ```
 
 ## Bad Example
@@ -41,7 +41,7 @@
   - `後端房間與對戰 API 介面`
 
 委派順序：
-1. 先呼叫 `/api-plan`
+1. 先呼叫 `/axb-api-plan`
 2. 後面再補 `/ui-plan`
 ```
 
@@ -51,7 +51,7 @@
 - `system-analysis` 必須依每個系統介面的主要分析責任與產物邊界決定委派對象，而不是只看名稱中是否出現某個技術詞。
 - 玩家可見流程、畫面狀態、互動節奏、資訊揭露與錯誤回饋，應委派給 `/ui-plan`。
 - 實體、欄位、狀態持有、生命週期、資料關聯與儲存責任，應委派給 `/data-plan`。
-- API 契約、事件協議、請求回應形狀、狀態轉移入口與錯誤碼語意，應委派給 `/api-plan`。
+- API 契約、事件協議、請求回應形狀、狀態轉移入口與錯誤碼語意，應委派給 `/axb-api-plan`。
 - 若某個介面同時涉及多種責任，應回到 `plan.md` 的介面切分重新判斷是否需要拆分，而不是把同一介面同時丟給多個 planner。
 
 ## Good Example
@@ -69,7 +69,7 @@
 
 3. `後端即時事件契約介面`
    - 主要介面：join/create、ready、start、guess、broadcast
-   - 委派：`/api-plan`
+   - 委派：`/axb-api-plan`
 ```
 
 ## Bad Example
@@ -78,7 +78,7 @@
 
 ```md
 1. `前端配對與對戰介面`
-   - 委派：`/ui-plan`、`/api-plan`
+   - 委派：`/ui-plan`、`/axb-api-plan`
    - 理由：裡面也有 socket 事件
 ```
 
@@ -101,7 +101,7 @@
   - `後端對戰事件契約介面`
 
 委派：
-- 單次呼叫 `/api-plan`
+- 單次呼叫 `/axb-api-plan`
 - prompt 內同時列出兩個介面與各自分析重點
 - 共用主產物：`contracts/openapi.yaml`
 ```
@@ -118,6 +118,6 @@
   - `後端對戰事件契約介面`
 
 委派：
-1. 呼叫 `/api-plan` 產出 `contracts/openapi.yaml`
-2. 再呼叫 `/api-plan` 覆寫同一份 `contracts/openapi.yaml`
+1. 呼叫 `/axb-api-plan` 產出 `contracts/openapi.yaml`
+2. 再呼叫 `/axb-api-plan` 覆寫同一份 `contracts/openapi.yaml`
 ```

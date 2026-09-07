@@ -9,7 +9,7 @@
 | --- | --- | --- | --- |
 | {{TECHNICAL_RESEARCH_ACTION}} | `{{TECHNICAL_RESEARCH_TRUTH_SPEC}}` | {{TECHNICAL_RESEARCH_SUMMARY}} | {{TECHNICAL_RESEARCH_REASON}} |
 
-## /api-plan
+## /axb-api-plan
 
 | 動作 | Truth 規格 | 改動摘要 | 原因 |
 | --- | --- | --- | --- |

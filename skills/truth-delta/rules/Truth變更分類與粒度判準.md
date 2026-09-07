@@ -1,16 +1,16 @@
 # Rule 1 - 每個 truth owner 必須各自維護一張表
 
 - Level: `MUST`
-- `truth-delta.md` 必須為每個 truth owner 保留獨立 section：`/technical-research`、`/api-plan`、`/data-plan`、`/dsl-refine`。
+- `truth-delta.md` 必須為每個 truth owner 保留獨立 section：`/technical-research`、`/axb-api-plan`、`/data-plan`、`/dsl-refine`。
 - 每個 section 只記錄該 owner 負責的 truth 規格，不得把 API、data、techstack、interface feature 的變更混在同一張表。
 - 每張表固定使用 `動作`、`Truth 規格`、`改動摘要`、`原因` 四欄。
 
 ## Good Example
 
-- 這個例子是好的，因為 API 變更只出現在 `/api-plan` section。
+- 這個例子是好的，因為 API 變更只出現在 `/axb-api-plan` section。
 
 ```md
-## /api-plan
+## /axb-api-plan
 
 | 動作 | Truth 規格 | 改動摘要 | 原因 |
 | --- | --- | --- | --- |
