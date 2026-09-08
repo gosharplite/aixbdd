@@ -40,7 +40,7 @@
 
 - [ ] T004 建立聊天測試共用 helper 入口與骨架
   - Read:
-    - `truth-delta.md` -> `/dsl-refine` 的聊天 ADD / MODIFY / DELETE rows
+    - `truth-delta.md` -> `/axb-dsl-refine` 的聊天 ADD / MODIFY / DELETE rows
     - `backend/features/steps/shared/chat_helpers.py`
   - 只做：固定 helper 落在 `backend/features/steps/shared/chat_helpers.py`，留出後續 stepdef 會呼叫的函式殼。
   - 不做：不寫各句 StepDef 實作語意，不寫送訊、清空或拒絕規則。
@@ -90,7 +90,7 @@
   -> `When: "{玩家}" 嘗試送出空白訊息`
   -> `Then: 這次聊天送出被拒絕`
   -> `Then: "{玩家}" 看不到先前的聊天訊息`
-- `truth-delta.md` -> `/dsl-refine` 有對應 ADD / MODIFY / DELETE 的句
+- `truth-delta.md` -> `/axb-dsl-refine` 有對應 ADD / MODIFY / DELETE 的句
 - `backend/features/steps/modules/房間聊天/操作與斷言.py`
 
 **Boundary**:
@@ -128,7 +128,7 @@
 **Shared Must Read**:
 - `specs/truth/features/backend/房間聊天/單人等待與空白訊息拒絕.feature` -> `Feature: 單人等待與空白訊息拒絕`
 - `specs/truth/features/backend/房間聊天/dsl.md` -> `Given: "{玩家}" 在房間內單人等待`, `When: "{玩家}" 嘗試送出空白訊息`, `Then: 這次聊天送出被拒絕`
-- `truth-delta.md` -> `/dsl-refine` ADD 單人等待與空白訊息拒絕
+- `truth-delta.md` -> `/axb-dsl-refine` ADD 單人等待與空白訊息拒絕
 
 **Boundary**:
 - 只處理單人等待與空白拒絕，不處理開局延續或離開清空。
@@ -146,7 +146,7 @@
 **Shared Must Read**:
 - `specs/truth/features/backend/房間聊天/雙方在場寫入房間對話.feature` -> `Feature: 雙方在場寫入房間對話`
 - `specs/truth/features/backend/房間聊天/dsl.md` -> `When: "{玩家}" 送出訊息 "{內容}"`, `Then: "{玩家}" 與 "{玩家}" 都看得到以下聊天內容：`
-- `truth-delta.md` -> `/dsl-refine` MODIFY `When: "{玩家}" 送出訊息 "{內容}"`
+- `truth-delta.md` -> `/axb-dsl-refine` MODIFY `When: "{玩家}" 送出訊息 "{內容}"`
 
 **Boundary**:
 - 不新增無關聊天場景。
@@ -164,7 +164,7 @@
 **Shared Must Read**:
 - `specs/truth/features/backend/房間聊天/離開後清空與他房隔離.feature` -> `Feature: 離開後清空與他房隔離`
 - `specs/truth/features/backend/房間聊天/dsl.md` -> `Then: "{玩家}" 看不到先前的聊天訊息`
-- `truth-delta.md` -> `/dsl-refine` DELETE `Then: 對手仍看得到離房前訊息`
+- `truth-delta.md` -> `/axb-dsl-refine` DELETE `Then: 對手仍看得到離房前訊息`
 - `backend/app/store.py` -> 可能仍保留離房訊息的產品分支
 
 **Boundary**:

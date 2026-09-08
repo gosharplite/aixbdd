@@ -21,7 +21,7 @@
 | --- | --- | --- | --- |
 | {{DATA_PLAN_ACTION}} | `{{DATA_PLAN_TRUTH_SPEC}}` | {{DATA_PLAN_SUMMARY}} | {{DATA_PLAN_REASON}} |
 
-## /dsl-refine
+## /axb-dsl-refine
 
 | 動作 | Truth 規格 | 改動摘要 | 原因 |
 | --- | --- | --- | --- |

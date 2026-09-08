@@ -150,7 +150,7 @@ RD 須在此階段確認系統設計是正確且高效率的。
 
 ### RD 針對前後端，一次性撰寫 BDD 測試計劃（Gherkin - 可執行規格）
 
-#### `/dsl-refine`
+#### `/axb-dsl-refine`
 
 由 RD 執行，將 PM 確認的驗收標準作為權威，將其拆成前端與後端的測試計劃（Gherkin - 可執行規格）。
 
@@ -191,7 +191,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
    RD: /technical-research 研究技術決策並更新 techstack。
 5. PM 確認 Gherkin 與 Prototyping 後 handoff 給 RD。
 6. /system-analysis        建立 plan.md，並依 Wave 委派 API / data planners。
-7. /dsl-refine             產出可執行的前後端 Gherkin 與 DSL。
+7. /axb-dsl-refine             產出可執行的前後端 Gherkin 與 DSL。
 8. /tasks                  產出 BDD 開發任務清單。
 9. /implement              依任務清單開發到位並通過測試。
 ```
@@ -216,7 +216,7 @@ system-analysis
 axb-api-plan
 axb-data-plan
 ui-plan
-dsl-refine
+axb-dsl-refine
 truth-delta
 tasks
 implement

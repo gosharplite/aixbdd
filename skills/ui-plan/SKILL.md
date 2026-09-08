@@ -25,4 +25,4 @@ disable-model-invocation: true
 
 ## Phase 3 -- 交付後續 handoff
 
-1. WRITE 向使用者回報 UI plan、靜態雛形路徑、引用的 truth 變更、剩餘風險，以及是否可進入 `/dsl-refine`、`/tasks` 或實作。
+1. WRITE 向使用者回報 UI plan、靜態雛形路徑、引用的 truth 變更、剩餘風險，以及是否可進入 `/axb-dsl-refine`、`/tasks` 或實作。

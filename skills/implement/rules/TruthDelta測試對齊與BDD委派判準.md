@@ -12,7 +12,7 @@
 
 ```md
 T008 [BDD-ALIGN]
-truth-delta: /dsl-refine MODIFY `When: "{玩家}" 送出訊息 "{內容}"`
+truth-delta: /axb-dsl-refine MODIFY `When: "{玩家}" 送出訊息 "{內容}"`
 action: MODIFY
 ```
 

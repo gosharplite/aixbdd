@@ -85,7 +85,7 @@
 - `specs/truth/features/{{INTERFACE_KIND}}/{{MODULE}}/dsl.md`
   -> `{{PHASE3_MODULE_DSL_SENTENCE}}`
 {{OPTIONAL_PHASE3_ROOT_DSL_SHARED_MUST_READ}}
-- `truth-delta.md` -> `/dsl-refine` 有對應 ADD / MODIFY / DELETE 的句
+- `truth-delta.md` -> `/axb-dsl-refine` 有對應 ADD / MODIFY / DELETE 的句
 - `{{PHASE3_EXISTING_STEPDEF_PATH}}`
 
 **Boundary**:

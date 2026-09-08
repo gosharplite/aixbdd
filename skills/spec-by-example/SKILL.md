@@ -31,4 +31,4 @@ disable-model-invocation: true
 
 ## Phase 4 -- 交付後續 handoff
 
-1. WRITE 向使用者回報寫入的 acceptance feature files、已澄清決策、剩餘 `# [need clarification]`，以及是否可進入 `/system-analysis` 或 `/dsl-refine`。
+1. WRITE 向使用者回報寫入的 acceptance feature files、已澄清決策、剩餘 `# [need clarification]`，以及是否可進入 `/system-analysis` 或 `/axb-dsl-refine`。

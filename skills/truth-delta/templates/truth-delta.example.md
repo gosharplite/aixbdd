@@ -22,7 +22,7 @@
 | --- | --- | --- | --- |
 | ADD | `specs/truth/data/data-model.dbml` -> `Table chat_messages` | 新增房間內訊息模型。 | 訊息生命週期需綁定房間與在場狀態。 |
 
-## /dsl-refine
+## /axb-dsl-refine
 
 | 動作 | Truth 規格 | 改動摘要 | 原因 |
 | --- | --- | --- | --- |

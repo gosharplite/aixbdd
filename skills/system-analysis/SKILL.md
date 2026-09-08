@@ -33,4 +33,4 @@ disable-model-invocation: true
 
 1. READ 需要判斷 planner 對應時，讀取 `rules/分析介面委派與planner對應判準.md`。
 2. DELEGATE 依 Wave 順序將 API 介面交給 `/axb-api-plan`、資料介面交給 `/axb-data-plan`、UI 介面交給 `/ui-plan`；每次 handoff 都必須包含 plan package path、truth root、truth-delta path、介面名稱與分析重點。
-3. WRITE 向使用者回報 `plan.md`、系統介面數量、Wave 數量、委派到哪些 planner，以及是否可進入 `/dsl-refine` 或 `/tasks`。
+3. WRITE 向使用者回報 `plan.md`、系統介面數量、Wave 數量、委派到哪些 planner，以及是否可進入 `/axb-dsl-refine` 或 `/tasks`。
