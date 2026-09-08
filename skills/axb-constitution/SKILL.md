@@ -1,5 +1,5 @@
 ---
-name: constitution
+name: axb-constitution
 description: 依使用者需求，以最小、可逐步增量的方式建立或修改模組化憲法。先定位要改的憲法檔，再只對必要的根憲法、共用規則或特定 skill artifact 規則做訪談、收斂與寫入。Use when the user asks to create, split, refine, or extend the modular constitution under `.agents/constitution/`.
 disable-model-invocation: true
 ---

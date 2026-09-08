@@ -182,7 +182,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 ## 快速開始
 
 ```text
-1. /constitution           必要時建立或調整 artifact 規則。
+1. /axb-constitution           必要時建立或調整 artifact 規則。
 2. /specify                建立新的 plan package。
 3. /axb-clarify-over-specs     選用；進一步確認產出的 spec。
 4. 平行執行：
@@ -207,7 +207,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 主要 workflow：
 
 ```text
-constitution
+axb-constitution
 specify
 axb-clarify-over-specs
 spec-by-example
