@@ -1,4 +1,4 @@
-# Rule 1 - `spec-by-example` 只產總驗收層 Gherkin
+# Rule 1 - `axb-spec-by-example` 只產總驗收層 Gherkin
 
 - Level: `MUST`
 - 這一層的產物是 spec package 內的 `features/acceptance/*.feature`。

@@ -59,7 +59,7 @@ RD 直接把需求標準落地成可運作的系統。
 
 - 更新後的 `spec.md` 是否已納入所有確認過的答案。
 
-#### `/spec-by-example`
+#### `/axb-spec-by-example`
 
 由 PM 執行，將驗收標準寫成可直接 review 的 Gherkin Acceptance Criteria。
 
@@ -69,7 +69,7 @@ RD 直接把需求標準落地成可運作的系統。
 - `Given / When / Then` 組成的流程是否清楚表達前提、行為與預期結果；
 - 正常結果與拒絕結果是否都符合產品預期。
 
-以 CRM 的「推進銷售機會」流程為例，`/spec-by-example` 可能產出：
+以 CRM 的「推進銷售機會」流程為例，`/axb-spec-by-example` 可能產出：
 
 ```gherkin
 Feature: 推進銷售機會
@@ -107,14 +107,14 @@ Feature: 推進銷售機會
 
 #### `/ui-plan`
 
-由 PM 在 `/spec-by-example` 後執行，根據已確認的驗收 Gherkin 完成 Prototyping。
+由 PM 在 `/axb-spec-by-example` 後執行，根據已確認的驗收 Gherkin 完成 Prototyping。
 
 完成後，PM review `ui-plan.md` 與靜態雛形。此雛形由 1..* 個 HTML 組成，為中保真度雛形，會覆蓋先前所定義的驗收流程。
 
 - PM 此時需花時間確保雛形的 UI/UX 滿足所需。
 - PM 確認驗收標準 Gherkin 與雛形後，需求正式交接給 RD 下去系統整合開發。
 
-`spec.md` 完成後，RD 可以在 PM 執行 `/spec-by-example` 與 `/ui-plan` 的同時，平行執行 `/technical-research`。
+`spec.md` 完成後，RD 可以在 PM 執行 `/axb-spec-by-example` 與 `/ui-plan` 的同時，平行執行 `/technical-research`。
 
 ### RD 進行系統規劃
 
@@ -186,7 +186,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 2. /specify                建立新的 plan package。
 3. /axb-clarify-over-specs     選用；進一步確認產出的 spec。
 4. 平行執行：
-   PM: /spec-by-example    產出可供 review 的驗收 Journey。
+   PM: /axb-spec-by-example    產出可供 review 的驗收 Journey。
        /ui-plan            根據驗收 Gherkin 完成 Prototyping。
    RD: /technical-research 研究技術決策並更新 techstack。
 5. PM 確認 Gherkin 與 Prototyping 後 handoff 給 RD。
@@ -210,7 +210,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 axb-constitution
 specify
 axb-clarify-over-specs
-spec-by-example
+axb-spec-by-example
 technical-research
 system-analysis
 axb-api-plan

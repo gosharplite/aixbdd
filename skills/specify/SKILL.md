@@ -37,4 +37,4 @@ disable-model-invocation: true
 
 ## Phase 5 -- 交付後續 handoff
 
-1. WRITE 向使用者回報 plan package、spec、checklist、truth-delta 路徑、本次是否進入 `/axb-clarify`、仍保留的 `NEEDS CLARIFICATION` 或假設，以及此 plan 是否可進入 `/spec-by-example` 或 `/technical-research`。
+1. WRITE 向使用者回報 plan package、spec、checklist、truth-delta 路徑、本次是否進入 `/axb-clarify`、仍保留的 `NEEDS CLARIFICATION` 或假設，以及此 plan 是否可進入 `/axb-spec-by-example` 或 `/technical-research`。

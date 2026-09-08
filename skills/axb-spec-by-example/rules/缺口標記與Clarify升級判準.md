@@ -40,7 +40,7 @@ Feature: 訂單成立與付款超時
 # Rule 2 - 先產出 Gherkin 與標記，再立刻升級 `/axb-clarify`
 
 - Level: `MUST`
-- `spec-by-example` 必須先把 acceptance feature files 與 `# [need clarification]` 寫出來，讓疑點落在具體 artifact 上。
+- `axb-spec-by-example` 必須先把 acceptance feature files 與 `# [need clarification]` 寫出來，讓疑點落在具體 artifact 上。
 - 完成標記後，只要仍有高影響缺口，就必須立刻委派 `/axb-clarify`，不得拖到後續 skill 或實作階段才問。
 - 不得在還沒落位到 feature files 前就直接把模糊需求口頭丟給 `/axb-clarify`。
 

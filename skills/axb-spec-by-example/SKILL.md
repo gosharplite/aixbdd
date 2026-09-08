@@ -1,12 +1,12 @@
 ---
-name: spec-by-example
+name: axb-spec-by-example
 description: 承接新的 plan package 中的 `spec.md`，把需求收斂成 plan-side `features/acceptance/*.feature`。此 skill 只寫入 `specs/plans/NNN-*/features/acceptance/**`，不修改 `specs/truth/**`，也不更新 `truth-delta.md`。
 disable-model-invocation: true
 ---
 
 # Spec By Example
 
-`spec-by-example` 產出 PM 可 review 的總驗收 Gherkin。這一層仍屬於 plan：它描述本次迭代希望達成的業務旅程，不是目前系統的 interface truth。
+`axb-spec-by-example` 產出 PM 可 review 的總驗收 Gherkin。這一層仍屬於 plan：它描述本次迭代希望達成的業務旅程，不是目前系統的 interface truth。
 
 # SOP
 

@@ -1,7 +1,7 @@
 # Rule 1 - Acceptance feature files 必須留在 plan package
 
 - Level: `MUST`
-- `/spec-by-example` 的輸出位置固定為 `specs/plans/NNN-<slug>/features/acceptance/*.feature`。
+- `/axb-spec-by-example` 的輸出位置固定為 `specs/plans/NNN-<slug>/features/acceptance/*.feature`。
 - Acceptance Gherkin 是本次迭代的業務驗收旅程，不是 interface truth。
 - 不得把 acceptance feature files 寫入 `specs/truth/features/**`。
 
