@@ -25,7 +25,7 @@ specs/truth/research.md
 - Level: `MUST`
 - `/axb-technical-research` 必須把系統目前採用的技術堆疊輸出或更新到 `specs/truth/techstack.md`。
 - `specs/truth/techstack.md` 必須是完整現況，不得只描述本次增量，也不得寫「其餘以 001/002 為準」。
-- 完成後必須委派 `/truth-delta` 記錄 `/axb-technical-research` 的 ADD / MODIFY / DELETE / NOOP。
+- 完成後必須委派 `/axb-truth-delta` 記錄 `/axb-technical-research` 的 ADD / MODIFY / DELETE / NOOP。
 
 ## Good Example
 

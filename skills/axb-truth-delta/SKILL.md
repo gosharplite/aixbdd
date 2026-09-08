@@ -1,12 +1,12 @@
 ---
-name: truth-delta
+name: axb-truth-delta
 description: 維護每次 plan package 內的 `truth-delta.md`，讓 truth owner skill 以共同格式記錄本輪對 `specs/truth/**` 的 ADD / MODIFY / DELETE / NOOP 語意單元變更。Use when a truth owner skill has inspected or changed truth specs and must initialize, append, update, or validate the current plan package truth delta handoff.
 disable-model-invocation: true
 ---
 
 # Truth Delta
 
-`truth-delta` 是 truth owner skill 的共同 handoff skill。它不決定要怎麼改 truth，也不替 owner 寫 OpenAPI、DBML、feature 或 DSL；它只負責把已確認的 truth 變更，以固定格式寫入當前 plan package 的 `truth-delta.md`，讓下游 skill 能接續推理。
+`axb-truth-delta` 是 truth owner skill 的共同 handoff skill。它不決定要怎麼改 truth，也不替 owner 寫 OpenAPI、DBML、feature 或 DSL；它只負責把已確認的 truth 變更，以固定格式寫入當前 plan package 的 `truth-delta.md`，讓下游 skill 能接續推理。
 
 # SOP
 

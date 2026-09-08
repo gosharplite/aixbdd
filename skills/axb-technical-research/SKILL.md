@@ -1,6 +1,6 @@
 ---
 name: axb-technical-research
-description: 承接 plan package 的 `spec.md`，產出 plan-side `research.md`，並作為 truth owner 更新 `specs/truth/techstack.md`。每次執行都必須盤點 techstack truth 的 ADD / MODIFY / DELETE / NOOP，完成後委派 `/truth-delta` 更新本 plan 的 `truth-delta.md`。
+description: 承接 plan package 的 `spec.md`，產出 plan-side `research.md`，並作為 truth owner 更新 `specs/truth/techstack.md`。每次執行都必須盤點 techstack truth 的 ADD / MODIFY / DELETE / NOOP，完成後委派 `/axb-truth-delta` 更新本 plan 的 `truth-delta.md`。
 disable-model-invocation: true
 ---
 
@@ -34,5 +34,5 @@ disable-model-invocation: true
 
 ## Phase 4 -- 更新 truth-delta 並交付
 
-1. DELEGATE 呼叫 `/truth-delta`，傳入 plan package、truth root、owner `/axb-technical-research` 與本輪 techstack truth 改動列。
+1. DELEGATE 呼叫 `/axb-truth-delta`，傳入 plan package、truth root、owner `/axb-technical-research` 與本輪 techstack truth 改動列。
 2. WRITE 向使用者回報 `research.md`、`specs/truth/techstack.md`、`truth-delta.md`、主要技術決策與殘餘風險。

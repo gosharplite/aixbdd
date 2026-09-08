@@ -198,7 +198,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 
 需求涉及對應 interface 時，`/axb-system-analysis` 會委派 `/axb-api-plan` 與 `/axb-data-plan`。若涉及前端，前端 RD 另外 review PM 已完成的 UI plan 與靜態雛形。
 
-`/truth-delta` 由 truth owner skills 呼叫，通常不需要由使用者手動執行。
+`/axb-truth-delta` 由 truth owner skills 呼叫，通常不需要由使用者手動執行。
 
 當 feature files 與 DSL 需要獨立 review 或重構時，可以使用 `/axb-gherkin-and-dsl`。
 
@@ -217,7 +217,7 @@ axb-api-plan
 axb-data-plan
 ui-plan
 axb-dsl-refine
-truth-delta
+axb-truth-delta
 axb-tasks
 axb-implement
 axb-bdd

@@ -1,6 +1,6 @@
 ---
 name: axb-api-plan
-description: Truth owner skill。根據 plan package、axb-system-analysis handoff 與現有 API truth，更新 `specs/truth/contracts/**`，支援 ADD / MODIFY / DELETE / NOOP API 語意單元，並委派 `/truth-delta` 記錄本輪 API truth 改動。
+description: Truth owner skill。根據 plan package、axb-system-analysis handoff 與現有 API truth，更新 `specs/truth/contracts/**`，支援 ADD / MODIFY / DELETE / NOOP API 語意單元，並委派 `/axb-truth-delta` 記錄本輪 API truth 改動。
 disable-model-invocation: true
 ---
 
@@ -29,5 +29,5 @@ disable-model-invocation: true
 
 ## Phase 4 -- 更新 truth-delta 並交付
 
-1. DELEGATE 呼叫 `/truth-delta`，傳入 plan package、truth root、owner `/axb-api-plan` 與本輪 API truth 改動列。
+1. DELEGATE 呼叫 `/axb-truth-delta`，傳入 plan package、truth root、owner `/axb-api-plan` 與本輪 API truth 改動列。
 2. WRITE 向使用者回報更新的 API truth 路徑、主要操作與 schema 變更、是否進入 `/axb-clarify`、truth-delta 更新結果，以及是否可交給後續實作或 `/axb-tasks`。
