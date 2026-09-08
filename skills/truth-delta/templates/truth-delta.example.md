@@ -16,7 +16,7 @@
 | ADD | `specs/truth/contracts/openapi.yaml` -> `POST /rooms/{roomId}/messages` | 新增送出房間訊息 API。 | 聊天需要獨立命令入口。 |
 | MODIFY | `specs/truth/contracts/openapi.yaml` -> `RoomSnapshot.messages` | 房間快照新增 `messages` 欄位。 | 前端用同一輪詢入口取得訊息。 |
 
-## /data-plan
+## /axb-data-plan
 
 | 動作 | Truth 規格 | 改動摘要 | 原因 |
 | --- | --- | --- | --- |

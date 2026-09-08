@@ -15,7 +15,7 @@
 | --- | --- | --- | --- |
 | {{API_PLAN_ACTION}} | `{{API_PLAN_TRUTH_SPEC}}` | {{API_PLAN_SUMMARY}} | {{API_PLAN_REASON}} |
 
-## /data-plan
+## /axb-data-plan
 
 | 動作 | Truth 規格 | 改動摘要 | 原因 |
 | --- | --- | --- | --- |

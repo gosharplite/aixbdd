@@ -137,7 +137,7 @@ Feature: 推進銷售機會
 
 在 `/technical-research` 執行完之後，RD 可執行。
 
-`/system-analysis` 依本次需求是否涉及後端，委派 `/axb-api-plan`（後端 API 設計）與 `/data-plan`（後端資料設計）。
+`/system-analysis` 依本次需求是否涉及後端，委派 `/axb-api-plan`（後端 API 設計）與 `/axb-data-plan`（後端資料設計）。
 
 它不會重做 `/ui-plan`。雛形已由 PM 完成；若本次涉及前端，前端 RD 再 review 一次既有的 `ui-plan.md` 與靜態雛形，確認目前技術邊界下可以落地。其他 RD 不需要重做或重看 UI。
 
@@ -196,7 +196,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 9. /implement              依任務清單開發到位並通過測試。
 ```
 
-需求涉及對應 interface 時，`/system-analysis` 會委派 `/axb-api-plan` 與 `/data-plan`。若涉及前端，前端 RD 另外 review PM 已完成的 UI plan 與靜態雛形。
+需求涉及對應 interface 時，`/system-analysis` 會委派 `/axb-api-plan` 與 `/axb-data-plan`。若涉及前端，前端 RD 另外 review PM 已完成的 UI plan 與靜態雛形。
 
 `/truth-delta` 由 truth owner skills 呼叫，通常不需要由使用者手動執行。
 
@@ -214,7 +214,7 @@ spec-by-example
 technical-research
 system-analysis
 axb-api-plan
-data-plan
+axb-data-plan
 ui-plan
 dsl-refine
 truth-delta
