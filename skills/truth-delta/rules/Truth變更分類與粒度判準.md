@@ -93,7 +93,7 @@
 # Rule 4 - 高影響 MODIFY 或 DELETE 必須已有 clarify 依據
 
 - Level: `MUST`
-- 若變更會移除 API、改變既有 request/response 語意、刪除資料欄位、改寫既有 feature 行為或削弱 DSL 驗證契約，truth owner 必須先完成 `/clarify` 或在 handoff 中提供明確使用者決策。
+- 若變更會移除 API、改變既有 request/response 語意、刪除資料欄位、改寫既有 feature 行為或削弱 DSL 驗證契約，truth owner 必須先完成 `/axb-clarify` 或在 handoff 中提供明確使用者決策。
 - `/truth-delta` 不替 truth owner 做產品決策；若缺少確認依據，應停止寫入並要求回到 owner skill 的 clarify gate。
 - 低風險新增、補充描述或不改外部語意的細節整理，可直接記錄。
 

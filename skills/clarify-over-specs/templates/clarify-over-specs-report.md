@@ -4,7 +4,7 @@
 
 - 目標 Spec: `{{SPEC_FILE}}`
 - Checklist: `{{CHECKLIST_STATUS}}`
-- 是否進入 `/clarify`: {{USED_CLARIFY}}
+- 是否進入 `/axb-clarify`: {{USED_CLARIFY}}
 - 本輪處理題數: {{QUESTION_COUNT}}
 
 ## 已解決的高影響缺口

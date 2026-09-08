@@ -22,7 +22,7 @@ disable-model-invocation: true
 
 1. THINK 從需求與現有 truth 整理主要使用者目標、核心流程、顯性限制、品質期望、可能的 ADD / MODIFY / DELETE 意圖與可辨識範圍邊界。
 2. READ 若需要判斷哪些缺口必須升級為 clarify，讀取 `rules/Clarify升級門檻與提問預算判準.md`。
-3. DELEGATE 若缺口會改變使用者故事切分、需求歸戶、主要流程、正式驗收標準，或會高影響修改/刪除既有 truth 行為，呼叫 `/clarify` 先訪談使用者；未收斂前停止，不自行假設答案。
+3. DELEGATE 若缺口會改變使用者故事切分、需求歸戶、主要流程、正式驗收標準，或會高影響修改/刪除既有 truth 行為，呼叫 `/axb-clarify` 先訪談使用者；未收斂前停止，不自行假設答案。
 
 ## Phase 3 -- 重建 spec 語意骨架
 
@@ -37,4 +37,4 @@ disable-model-invocation: true
 
 ## Phase 5 -- 交付後續 handoff
 
-1. WRITE 向使用者回報 plan package、spec、checklist、truth-delta 路徑、本次是否進入 `/clarify`、仍保留的 `NEEDS CLARIFICATION` 或假設，以及此 plan 是否可進入 `/spec-by-example` 或 `/technical-research`。
+1. WRITE 向使用者回報 plan package、spec、checklist、truth-delta 路徑、本次是否進入 `/axb-clarify`、仍保留的 `NEEDS CLARIFICATION` 或假設，以及此 plan 是否可進入 `/spec-by-example` 或 `/technical-research`。

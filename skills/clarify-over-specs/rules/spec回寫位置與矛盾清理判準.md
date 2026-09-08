@@ -109,7 +109,7 @@
 # Rule 4 - 未解高影響缺口要明示保留狀態，不可用腦補補洞
 
 - Level: `MUST`
-- 若本輪 `/clarify` 後仍有高影響缺口未解，必須在 spec 或完成回報中明示其當前狀態，例如 `NEEDS CLARIFICATION`、deferred 風險、或需交由後續 skill 判定。
+- 若本輪 `/axb-clarify` 後仍有高影響缺口未解，必須在 spec 或完成回報中明示其當前狀態，例如 `NEEDS CLARIFICATION`、deferred 風險、或需交由後續 skill 判定。
 - 不可因為想讓文件看起來完整，就自行補上一個未經確認的答案。
 - 若某缺口已明確 defer 到後續研究、plan 或實作設計，應寫出 defer 理由，讓後續 skill 知道這不是遺漏，而是刻意保留。
 

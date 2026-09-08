@@ -4,7 +4,7 @@
 
 - 目標 Spec: `specs/001-online-pvp-1a2b/spec.md`
 - Checklist: `specs/001-online-pvp-1a2b/checklists/requirements.md`
-- 是否進入 `/clarify`: 是
+- 是否進入 `/axb-clarify`: 是
 - 本輪處理題數: 3
 
 ## 已解決的高影響缺口

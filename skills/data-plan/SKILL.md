@@ -19,7 +19,7 @@ disable-model-invocation: true
 ## Phase 2 -- 盤點 data ADD / MODIFY / DELETE
 
 1. THINK 依需求、handoff、現有 DBML 與 truth-delta，整理本輪要新增、修改、刪除或保持不變的 table、enum、ref、field、index、生命週期與儲存責任。
-2. DELEGATE 若高影響 MODIFY / DELETE 會改變既有資料生命週期、唯一鍵、關聯方向、公開投影或儲存模型，且尚未有明確使用者決策，呼叫 `/clarify`；未收斂前停止。
+2. DELEGATE 若高影響 MODIFY / DELETE 會改變既有資料生命週期、唯一鍵、關聯方向、公開投影或儲存模型，且尚未有明確使用者決策，呼叫 `/axb-clarify`；未收斂前停止。
 
 ## Phase 3 -- 更新 data truth
 
@@ -30,4 +30,4 @@ disable-model-invocation: true
 ## Phase 4 -- 更新 truth-delta 並交付
 
 1. DELEGATE 呼叫 `/truth-delta`，傳入 plan package、truth root、owner `/data-plan` 與本輪 data truth 改動列。
-2. WRITE 向使用者回報更新的 data truth 路徑、主要實體與生命週期變更、是否進入 `/clarify`、truth-delta 更新結果，以及是否可交給後續實作或 `/tasks`。
+2. WRITE 向使用者回報更新的 data truth 路徑、主要實體與生命週期變更、是否進入 `/axb-clarify`、truth-delta 更新結果，以及是否可交給後續實作或 `/tasks`。

@@ -21,7 +21,7 @@ disable-model-invocation: true
 
 1. THINK 從需求原文、`spec.md`、`research.md`、`truth-delta.md` 與現有 truth 整理本次需求部位、外部依賴、資料責任、UI 責任與技術端點。
 2. READ 需要判斷介面邊界時，讀取 `rules/系統介面盤點與端點歸類判準.md`。
-3. DELEGATE 若缺口會改變系統介面數量、端點類型、介面邊界、truth owner 責任或 Wave 切分，呼叫 `/clarify`；未收斂前停止。
+3. DELEGATE 若缺口會改變系統介面數量、端點類型、介面邊界、truth owner 責任或 Wave 切分，呼叫 `/axb-clarify`；未收斂前停止。
 
 ## Phase 3 -- 規劃分析 Wave 並產出 plan
 

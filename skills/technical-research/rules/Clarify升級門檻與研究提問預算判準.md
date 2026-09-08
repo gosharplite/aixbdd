@@ -1,8 +1,8 @@
-# Rule 1 - 只有會改變研究結論的高影響缺口才應升級到 `/clarify`
+# Rule 1 - 只有會改變研究結論的高影響缺口才應升級到 `/axb-clarify`
 
 - Level: `MUST`
-- 只有當缺口會改變決策集合、候選方案邊界、比較維度、不可違反限制、推薦方向或後續 handoff 判斷時，才應升級到 `/clarify`。
-- 若未定細節只影響文字表述、次要比較角度、例句內容或可在 `Rationale` 中明示保留的局部假設，不應直接升級到 `/clarify`。
+- 只有當缺口會改變決策集合、候選方案邊界、比較維度、不可違反限制、推薦方向或後續 handoff 判斷時，才應升級到 `/axb-clarify`。
+- 若未定細節只影響文字表述、次要比較角度、例句內容或可在 `Rationale` 中明示保留的局部假設，不應直接升級到 `/axb-clarify`。
 - 不可把所有研究不確定性都轉成訪談，讓上游 skill 失去先行收斂研究問題的責任。
 
 ## Good Example
@@ -17,7 +17,7 @@
 - 是否存在必須支援的離線備份限制
 
 決策：
-- 升級到 `/clarify`
+- 升級到 `/axb-clarify`
 ````
 
 ## Bad Example
@@ -32,15 +32,15 @@
 - Alternatives considered 要列 2 個還是 3 個
 
 決策：
-- 升級到 `/clarify`
+- 升級到 `/axb-clarify`
 ````
 
 # Rule 2 - 每輪 research clarify 只處理最高影響的 1 至 3 題
 
 - Level: `MUST`
-- `technical-research` 在委派 `/clarify` 前，必須先自行排序研究缺口，只把本輪最高影響的 1 至 3 題交給 `/clarify`。
+- `technical-research` 在委派 `/axb-clarify` 前，必須先自行排序研究缺口，只把本輪最高影響的 1 至 3 題交給 `/axb-clarify`。
 - 若高影響缺口超過 3 題，應保留最關鍵的 1 至 3 題先問，其餘風險可留在 artifact 中揭露或待下一輪。
-- 不可把未整理的一長串技術問題原樣傾倒給 `/clarify`。
+- 不可把未整理的一長串技術問題原樣傾倒給 `/axb-clarify`。
 
 ## Good Example
 
@@ -54,7 +54,7 @@
 4. 文件標題命名偏好
 
 委派：
-- 本輪只把前 3 題交給 `/clarify`
+- 本輪只把前 3 題交給 `/axb-clarify`
 ````
 
 ## Bad Example
@@ -63,14 +63,14 @@
 
 ````md
 委派：
-- 把 9 題技術疑問全部交給 `/clarify`
+- 把 9 題技術疑問全部交給 `/axb-clarify`
 ````
 
 # Rule 3 - 低風險未定細節應保留在研究內容中明示
 
 - Level: `MUST`
 - 若主要決策、比較維度與推薦方向已可成立，但仍有少數局部資訊未定，應優先在對應決策的 `Rationale` 或 `Alternatives considered` 中明示假設、限制或待驗證點。
-- 只有當未定細節已影響最終採納結論或下一步 handoff，才應升級回 `/clarify`。
+- 只有當未定細節已影響最終採納結論或下一步 handoff，才應升級回 `/axb-clarify`。
 - 不可為了追求文件表面完整，就對每個局部未知都發起訪談。
 
 ## Good Example
@@ -90,13 +90,13 @@
 - 還不知道單張圖片平均大小會是 4MB 還是 5MB
 
 決策：
-- 暫停 research，立刻進 `/clarify`
+- 暫停 research，立刻進 `/axb-clarify`
 ````
 
 # Rule 4 - 產品範圍已拍板的不得重問；BDD techstack、測試策略、系統有哪些端不算在內
 
 - Level: `SHOULD`
-- 當 `/specify` 已在 `spec.md` 中明確拍板產品功能邊界、第一版做／不做、成功標準或業務限制時，`technical-research` 應直接沿用，不應把同一產品問題再次交給 `/clarify`。
+- 當 `/specify` 已在 `spec.md` 中明確拍板產品功能邊界、第一版做／不做、成功標準或業務限制時，`technical-research` 應直接沿用，不應把同一產品問題再次交給 `/axb-clarify`。
 - 下列三題即使 `spec.md` 假設或範圍已經寫了答案，仍必須依 `rules/AIxBDD必問問題與起始專案介面澄清判準.md` 處理，不得用本條跳過：
   - BDD techstack
   - 測試策略

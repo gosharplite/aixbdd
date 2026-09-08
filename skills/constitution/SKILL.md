@@ -23,7 +23,7 @@ disable-model-invocation: true
 
 1. THINK 先從需求中判斷是否存在會改變規則落點、適用 skill、適用 artifact、規則強度或是否需要新檔的高影響缺口。
 2. READ 若需要判斷哪些缺口必須先問，讀取 `rules/高影響缺口與最小訪談判準.md`，再依其要求收斂本輪 1 至 3 題。
-3. DELEGATE 若仍有高影響缺口，呼叫 `/clarify`，指定提問面向為規則落點、適用 artifact、硬性程度與是否增量修改；未收斂前停止，不自行假設答案。
+3. DELEGATE 若仍有高影響缺口，呼叫 `/axb-clarify`，指定提問面向為規則落點、適用 artifact、硬性程度與是否增量修改；未收斂前停止，不自行假設答案。
 
 ## Phase 3 -- 撰寫最小憲法增量
 
@@ -34,7 +34,7 @@ disable-model-invocation: true
 
 ## Phase 4 -- 交付與後續 handoff
 
-1. WRITE 向使用者回報本次新增或修改的憲法檔、每個檔新增或調整的規則、是否進行 `/clarify`，以及哪些需求被刻意 defer 到未來 skill 或 artifact。
+1. WRITE 向使用者回報本次新增或修改的憲法檔、每個檔新增或調整的規則、是否進行 `/axb-clarify`，以及哪些需求被刻意 defer 到未來 skill 或 artifact。
 2. WRITE 若後續還需要把某個 skill 接上憲法讀取流程，明示應由 `/skill-engineering` 或對應 skill 編修接續，不在本 skill 內自動擴張實作。
 
 ## Additional Resources

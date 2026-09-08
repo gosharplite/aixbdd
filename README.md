@@ -229,7 +229,7 @@ axb-bdd
 gherkin-and-dsl
 ```
 
-目前這 15 支 skills 預期環境中另有可相容的 `/clarify` skill。`/clarify` 未包含在本 repo。
+目前這 15 支 skills 預期環境中另有可相容的 `/axb-clarify` skill。`/axb-clarify` 未包含在本 repo。
 
 ## Skill 目錄
 

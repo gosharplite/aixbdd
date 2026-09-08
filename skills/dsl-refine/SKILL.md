@@ -20,7 +20,7 @@ disable-model-invocation: true
 
 1. READ 讀取 `rules/介面Gherkin原子化與單一Act判準.md`，確認介面 Gherkin 原子化與單一 Act 邊界。
 2. THINK 逐一盤點 acceptance 的 Rule、Example、關鍵 Given / When / Then 與 `# [need clarification]`，分派到相關介面，確認每條 acceptance 規則至少由一個 interface truth 承接。
-3. DELEGATE 若高影響 MODIFY / DELETE 會改寫既有 interface 行為、移除既有驗收或削弱 DSL 驗證契約，且尚未有明確使用者決策，呼叫 `/clarify`；未收斂前停止。
+3. DELEGATE 若高影響 MODIFY / DELETE 會改寫既有 interface 行為、移除既有驗收或削弱 DSL 驗證契約，且尚未有明確使用者決策，呼叫 `/axb-clarify`；未收斂前停止。
 
 ## Phase 3 -- 更新 interface feature truth
 

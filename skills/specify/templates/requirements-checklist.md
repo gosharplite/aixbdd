@@ -31,7 +31,7 @@
 
 ## 缺口與澄清策略
 
-- [ ] 只有高影響缺口才升級到 `/clarify`
+- [ ] 只有高影響缺口才升級到 `/axb-clarify`
 - [ ] 本輪 clarify 題數控制在 1 至 3 題
 - [ ] 低風險未定細節已用 `NEEDS CLARIFICATION` 或假設揭露
 - [ ] 仍保留的 `NEEDS CLARIFICATION` 已標示是否阻塞後續規劃

@@ -111,7 +111,7 @@
 - 建立 candidate question 後，必須以 `Impact × Uncertainty` 的綜合判斷排序，而不是依 spec 出現順序或看到哪個缺口先問哪個。
 - `Impact` 應優先看它對規格正確性、跨章節一致性、正式驗收、資料模型、NFR 承諾與後續 `/plan` 的影響面。
 - `Uncertainty` 應看目前 spec 是否存在多種合理解讀、是否互相矛盾、是否缺少唯一可推導答案。
-- 單輪委派 `/clarify` 時，最多只帶 1 至 3 題；整個 clarify session 累計不得超過 5 題。
+- 單輪委派 `/axb-clarify` 時，最多只帶 1 至 3 題；整個 clarify session 累計不得超過 5 題。
 - 若高影響缺口超過 3 題，應先保留排序最高的 1 至 3 題，其餘列為 deferred 高風險缺口，在完成回報中明示，不可一次傾倒所有問題。
 
 ## Good Example
@@ -143,8 +143,8 @@
 # Rule 4 - 不為提問而提問，已足夠清楚時直接進回寫或回報
 
 - Level: `SHOULD`
-- 若 spec 雖有局部未定細節，但已不足以改變高影響判斷，則不應再委派 `/clarify`，而應直接保留為假設、`NEEDS CLARIFICATION` 或 deferred 風險。
-- 若本輪掃描後所有高影響類別皆已 `Clear`，應直接跳過 `/clarify`，進入回驗與完成回報。
+- 若 spec 雖有局部未定細節，但已不足以改變高影響判斷，則不應再委派 `/axb-clarify`，而應直接保留為假設、`NEEDS CLARIFICATION` 或 deferred 風險。
+- 若本輪掃描後所有高影響類別皆已 `Clear`，應直接跳過 `/axb-clarify`，進入回驗與完成回報。
 - 若缺口雖存在，但答案更適合由後續研究、技術方案或 planner skill 決定，也應在完成回報中明示 defer 理由，而不是提早把規劃問題偽裝成需求澄清。
 
 ## Good Example
@@ -157,7 +157,7 @@
 - 僅剩房間列表呈現細節未定
 
 決策：
-- 不進 `/clarify`
+- 不進 `/axb-clarify`
 - 在完成回報中列為低風險 deferred
 ```
 
@@ -170,5 +170,5 @@
 - 只剩低風險 UI 細節未定
 
 決策：
-- 仍要求進 `/clarify` 再問 3 題
+- 仍要求進 `/axb-clarify` 再問 3 題
 ```

@@ -73,13 +73,13 @@
 - Level: `MUST`
 - 完成回報至少必須交代：
   - 目標 `SPEC_FILE` 與 `CHECKLIST_FILE`（或其缺席狀態）
-  - 本輪是否進入 `/clarify`，以及實際處理了幾個高影響缺口
+  - 本輪是否進入 `/axb-clarify`，以及實際處理了幾個高影響缺口
   - 哪些 section 被更新
   - checklist before / after 狀態，或無 checklist 可回刷
   - 哪些高影響缺口已解決、哪些仍 deferred 或 outstanding
   - 是否已 ready，以及建議下一步應進 `/plan` 或稍後再跑 `/clarify-over-specs`
 - 完成回報的重點是讓使用者與後續 skill 都能知道：這輪到底清掉了哪些風險，還剩什麼不能假裝沒看到。
-- 若本輪沒有進 `/clarify`，也要說明原因，例如所有高影響缺口皆已清楚，或僅剩低風險 deferred 細節。
+- 若本輪沒有進 `/axb-clarify`，也要說明原因，例如所有高影響缺口皆已清楚，或僅剩低風險 deferred 細節。
 
 ## Good Example
 
@@ -88,7 +88,7 @@
 ```md
 完成回報：
 - 目標 spec：`specs/001-online-pvp-1a2b/spec.md`
-- 進入 `/clarify`：是，2 題
+- 進入 `/axb-clarify`：是，2 題
 - 更新 section：使用者故事 3、邊界情況、成功標準
 - checklist：12/16 -> 14/16
 - deferred：斷線恢復策略

@@ -5,7 +5,7 @@
   1. **BDD techstack**：各端用哪套跑 Gherkin。一定要 clarify。
   2. **測試策略**：怎麼驗。一定要問。沒講就預設都是 E2E。
   3. **系統有哪些端**：起始專案，且系統介面疑似有後端或其他端時，也要問。
-- 三題都走 `/clarify`。不可只在 `Rationale` 裡自行補完，也不可沿用相簿範例或 agent 推論充當答案。
+- 三題都走 `/axb-clarify`。不可只在 `Rationale` 裡自行補完，也不可沿用相簿範例或 agent 推論充當答案。
 - 任一必問題尚未拍板，必須停止，不進入產出 `research.md` / `techstack.md` 的 phase。
 
 ## Good Example
@@ -15,7 +15,7 @@
 ````md
 起始專案。`spec.md` 有工位終端、狀態板、系統設定，工單狀態要共用。
 
-本輪 `/clarify`：
+本輪 `/axb-clarify`：
 1. BDD techstack：前端 Playwright，後端 behave
 2. 測試策略：前端 E2E，後端 behave 打 API 與權威狀態
 3. 系統有哪些端：前端 webapp + 後端 API
@@ -41,7 +41,7 @@
 - Level: `MUST`
 - 下列才算該題已拍板，可以跳過重問：
   - 使用者這輪原話已經指定，例如「後端則是 behave」「前端要上 webapp」「後端是 python fastapi」「要直接上 e2e test」
-  - 本輪 `/clarify` 已經得到該題答案
+  - 本輪 `/axb-clarify` 已經得到該題答案
   - 既有 `specs/truth/techstack.md` 已寫明該端、該端 BDD techstack、以及測試策略，且本輪沒有改判
 - 下列不算已回答，仍必須 clarify：
   - `spec.md` 假設或範圍寫了「純前端」「無後端」「無資料庫」「不要 E2E」
