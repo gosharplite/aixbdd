@@ -73,21 +73,21 @@ Phase 4C REGRESSION: 跑 Test Scope
 刪掉 API 欄位，但保留舊 feature file 與 step definition。
 ```
 
-# Rule 4 - 只有 Green / Refactor 才委派 `/bdd`，並帶 Test Scope
+# Rule 4 - 只有 Green / Refactor 才委派 `/axb-bdd`，並帶 Test Scope
 
 - Level: `MUST`
-- `/implement` 只在 `[BDD-GREEN]` 或 `[BDD-REFACTOR]` 呼叫 `/bdd`。
+- `/implement` 只在 `[BDD-GREEN]` 或 `[BDD-REFACTOR]` 呼叫 `/axb-bdd`。
 - 呼叫時必須明確提供 `Test Scope`、truth delta action、affected truth rows、同模組 `dsl.md`、該 feature 實際使用的介面根共用 DSL rows 與 requested step。
 - 若該 feature 沒有使用介面根共用 DSL row，必須明示「無」。
 - `/implement` 只傳遞 `tasks.md` 已綁定的精確 DSL 參照，不重新判斷句型應屬模組或共用。
-- Phase 3 的 `[BDD-ALIGN]`、`[BDD-REMOVE]`、`[BDD-RED]` 不委派 `/bdd`。
+- Phase 3 的 `[BDD-ALIGN]`、`[BDD-REMOVE]`、`[BDD-RED]` 不委派 `/axb-bdd`。
 
 ## Good Example
 
 - 這個例子是好的，因為 Green 帶了 Test Scope。
 
 ```md
-呼叫 /bdd
+呼叫 /axb-bdd
 - requested step: green
 - Test Scope: `specs/truth/features/backend/房間聊天/單人等待與空白訊息拒絕.feature`
 - action: ADD
@@ -97,8 +97,8 @@ Phase 4C REGRESSION: 跑 Test Scope
 
 ## Bad Example
 
-- 這個例子是壞的，因為它把 Phase 3 ALIGN 當成 `/bdd` 的單一 feature red。
+- 這個例子是壞的，因為它把 Phase 3 ALIGN 當成 `/axb-bdd` 的單一 feature red。
 
 ```md
-呼叫 /bdd，requested step=red，請處理離開後清空 feature。
+呼叫 /axb-bdd，requested step=red，請處理離開後清空 feature。
 ```

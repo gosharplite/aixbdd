@@ -1,5 +1,5 @@
 ---
-name: bdd
+name: axb-bdd
 description: 承接 /dsl-refine 之後已存在的介面 feature files 與 dsl.md，在使用者指定的單一介面 feature file 或其明確區塊內，以 red、green、refactor 三個入口推進 BDD/TDD 實作。它不負責產 feature files；若規格缺口影響驗收意圖或 DSL 邊界，必須停止並回交上游。
 disable-model-invocation: true
 ---
@@ -9,10 +9,10 @@ disable-model-invocation: true
 把 `/dsl-refine` 已交付的介面 `feature files` 與 `dsl.md`，轉成可執行的 step definitions、測試實作與產品碼變更：
 
 - `feature file` 與 `dsl.md` 是本 skill 的上游單一溯源。
-- `/bdd` 只在使用者指定的單一介面 `feature file` 或其明確區塊內推進工作。
-- `/bdd` 有 `red`、`green`、`refactor` 三個入口；每次只進入其中一個入口。
+- `/axb-bdd` 只在使用者指定的單一介面 `feature file` 或其明確區塊內推進工作。
+- `/axb-bdd` 有 `red`、`green`、`refactor` 三個入口；每次只進入其中一個入口。
 - 同一次 invocation 可以在指定範疇內 sequentially 推進多個 slices，但同一時刻只處理一個 slice。
-- 若 `/bdd` 是由 `/implement` 的單一 task 委派，必須服從該 task 的單一 `slice`、單一 `requested step` 與當前 scope，不能順手吞掉後續 task。
+- 若 `/axb-bdd` 是由 `/implement` 的單一 task 委派，必須服從該 task 的單一 `slice`、單一 `requested step` 與當前 scope，不能順手吞掉後續 task。
 - 若發現 `feature file` 或 `dsl.md` 有高影響缺口，必須停止並回交 `/dsl-refine` 或使用者指定的上游流程。
 
 # SOP

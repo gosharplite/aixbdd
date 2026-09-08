@@ -42,7 +42,7 @@
 - Level: `MUST`
 - 每個 feature step 在同模組 DSL 與實際使用的介面根共用 rows 合併查找後，必須恰好得到一個可落地定義。
 - 合併後為零定義，代表 DSL 缺失；合併後為多重定義，代表 DSL 邊界或詞彙不唯一。兩者都必須停止受影響範圍並回交 `/dsl-refine`。
-- `/bdd` 不得自行新增、改寫或擇一採用 DSL 定義來解除零定義或多重定義。
+- `/axb-bdd` 不得自行新增、改寫或擇一採用 DSL 定義來解除零定義或多重定義。
 
 ## Good Example
 
@@ -54,7 +54,7 @@
 - 模組 DSL：0 筆
 - 根共用 DSL 的實際使用 rows：1 筆
 - 合計：1 筆
-- 決策：依唯一 DSL 定義進入 `/bdd red`
+- 決策：依唯一 DSL 定義進入 `/axb-bdd red`
 
 案例 B：
 - step：`那麼對手看見新的密文`
@@ -85,7 +85,7 @@ step：
 # Rule 3 - 不得在 BDD 重新分類模組與共用句型
 
 - Level: `MUST`
-- 句型應屬模組 DSL 或介面根共用 DSL，已由 `/dsl-refine` 的 truth ownership 決定；`/bdd` 只能承接，不得重新分類。
+- 句型應屬模組 DSL 或介面根共用 DSL，已由 `/dsl-refine` 的 truth ownership 決定；`/axb-bdd` 只能承接，不得重新分類。
 - 即使某句型看似可被其他模組重用，也不得在本輪把它搬到介面根 DSL、複製到另一個模組 DSL，或以 step definition 的共用程度反推 truth 歸屬。
 - 若既有歸屬造成缺失、重複或無法唯一落地，必須回交 `/dsl-refine`，不能以下游目錄整理取代上游決策。
 
@@ -109,7 +109,7 @@ step：
 
 ```md
 處理：
-- `/bdd` 認為句型以後可能共用
+- `/axb-bdd` 認為句型以後可能共用
 - 把 row 從 `{介面}/{模組}/dsl.md` 搬到 `{介面}/dsl.md`
 - 繼續撰寫 step definitions
 ```

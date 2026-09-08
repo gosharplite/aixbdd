@@ -220,7 +220,7 @@ dsl-refine
 truth-delta
 tasks
 implement
-bdd
+axb-bdd
 ```
 
 共用 Gherkin 與 DSL 標準：

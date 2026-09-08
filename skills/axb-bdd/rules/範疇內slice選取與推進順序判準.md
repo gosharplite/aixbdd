@@ -1,7 +1,7 @@
 # Rule 1 - 同一次 invocation 可推進多個 slices，但同一時刻只能處理一個 slice
 
 - Level: `MUST`
-- `/bdd` 雖可在使用者指定的單一介面 `feature file` 或其明確區塊內 sequentially 推進多個 slices，但任何時刻都只能鎖定一個當前 slice。
+- `/axb-bdd` 雖可在使用者指定的單一介面 `feature file` 或其明確區塊內 sequentially 推進多個 slices，但任何時刻都只能鎖定一個當前 slice。
 - 不可把多個 slices 打包成同一輪同時寫碼、同時驗證，只因為它們看起來共用同一批 step 或頁面。
 - 只有當前 slice 已達成該入口的完成條件，才可選下一個 slice。
 
@@ -100,7 +100,7 @@
 
 - Level: `SHOULD`
 - 若當前範疇包含 `Scenario Outline` 或一組資料家族，可在同次 invocation 內 sequentially 推進多個 slices，但前提是它們仍屬同一個業務規則或同一種行為差異。
-- 若不同 rows、Examples 或資料列實際代表不同商業規則，應先回到上游規格拆分，而不是在 `/bdd` 階段硬吃。
+- 若不同 rows、Examples 或資料列實際代表不同商業規則，應先回到上游規格拆分，而不是在 `/axb-bdd` 階段硬吃。
 - Data Table 若同時包含 setup 與 assertion 資料，也應先確認其核心行為仍然只有一個。
 
 ## Good Example
