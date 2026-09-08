@@ -1,12 +1,12 @@
 ---
-name: technical-research
+name: axb-technical-research
 description: 承接 plan package 的 `spec.md`，產出 plan-side `research.md`，並作為 truth owner 更新 `specs/truth/techstack.md`。每次執行都必須盤點 techstack truth 的 ADD / MODIFY / DELETE / NOOP，完成後委派 `/truth-delta` 更新本 plan 的 `truth-delta.md`。
 disable-model-invocation: true
 ---
 
 # Technical Research
 
-`technical-research` 同時產出研究過程與技術堆疊真相：`research.md` 留在 plan package，`specs/truth/techstack.md` 是整個系統目前唯一 techstack truth。
+`axb-technical-research` 同時產出研究過程與技術堆疊真相：`research.md` 留在 plan package，`specs/truth/techstack.md` 是整個系統目前唯一 techstack truth。
 
 # SOP
 
@@ -15,7 +15,7 @@ disable-model-invocation: true
 1. READ 讀取使用者需求、呼叫者要求、目標 plan package 的 `spec.md`、既有 `research.md`、`truth-delta.md`、`specs/truth/techstack.md` 與必要 codebase 邊界。
 2. READ 讀取 `templates/research.md`、`templates/research.example.md`、`templates/techstack.md` 與 `templates/techstack.example.md`，確認 research 與 techstack 的責任邊界。
 3. READ 讀取 `rules/Research輸出定位與spec後接續判準.md`，確認 `research.md` 寫入 plan package、`techstack.md` 寫入 `specs/truth/techstack.md`。
-4. READ 讀取 `.agents/constitution/CONSTITUTION.md`、`.agents/constitution/shared.md`、`.agents/constitution/skills/technical-research/research.md` 與 `.agents/constitution/skills/technical-research/techstack.md`。
+4. READ 讀取 `.agents/constitution/CONSTITUTION.md`、`.agents/constitution/shared.md`、`.agents/constitution/skills/axb-technical-research/research.md` 與 `.agents/constitution/skills/axb-technical-research/techstack.md`。
 
 ## Phase 2 -- 收斂研究缺口與 truth 變更風險
 
@@ -34,5 +34,5 @@ disable-model-invocation: true
 
 ## Phase 4 -- 更新 truth-delta 並交付
 
-1. DELEGATE 呼叫 `/truth-delta`，傳入 plan package、truth root、owner `/technical-research` 與本輪 techstack truth 改動列。
+1. DELEGATE 呼叫 `/truth-delta`，傳入 plan package、truth root、owner `/axb-technical-research` 與本輪 techstack truth 改動列。
 2. WRITE 向使用者回報 `research.md`、`specs/truth/techstack.md`、`truth-delta.md`、主要技術決策與殘餘風險。

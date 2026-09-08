@@ -3,7 +3,7 @@
 **Plan Package**: `{{PLAN_PACKAGE}}`
 **Truth Root**: `specs/truth`
 
-## /technical-research
+## /axb-technical-research
 
 | 動作 | Truth 規格 | 改動摘要 | 原因 |
 | --- | --- | --- | --- |

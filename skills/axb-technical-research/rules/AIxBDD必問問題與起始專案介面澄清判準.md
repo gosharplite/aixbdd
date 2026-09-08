@@ -1,7 +1,7 @@
 # Rule 1 - AIxBDD 有三題必問，沒問完不得寫 research / techstack
 
 - Level: `MUST`
-- 這是 AIxBDD workflow。`/technical-research` 在寫入 `research.md` 或更新 `specs/truth/techstack.md` 之前，必須先確認這三題都已拍板：
+- 這是 AIxBDD workflow。`/axb-technical-research` 在寫入 `research.md` 或更新 `specs/truth/techstack.md` 之前，必須先確認這三題都已拍板：
   1. **BDD techstack**：各端用哪套跑 Gherkin。一定要 clarify。
   2. **測試策略**：怎麼驗。一定要問。沒講就預設都是 E2E。
   3. **系統有哪些端**：起始專案，且系統介面疑似有後端或其他端時，也要問。

@@ -114,11 +114,11 @@ Feature: 推進銷售機會
 - PM 此時需花時間確保雛形的 UI/UX 滿足所需。
 - PM 確認驗收標準 Gherkin 與雛形後，需求正式交接給 RD 下去系統整合開發。
 
-`spec.md` 完成後，RD 可以在 PM 執行 `/axb-spec-by-example` 與 `/ui-plan` 的同時，平行執行 `/technical-research`。
+`spec.md` 完成後，RD 可以在 PM 執行 `/axb-spec-by-example` 與 `/ui-plan` 的同時，平行執行 `/axb-technical-research`。
 
 ### RD 進行系統規劃
 
-#### `/technical-research`
+#### `/axb-technical-research`
 
 由 RD 執行，分析這次需求需要做出的技術決策與技術選型。
 
@@ -135,7 +135,7 @@ Feature: 推進銷售機會
 
 #### `/axb-system-analysis`
 
-在 `/technical-research` 執行完之後，RD 可執行。
+在 `/axb-technical-research` 執行完之後，RD 可執行。
 
 `/axb-system-analysis` 依本次需求是否涉及後端，委派 `/axb-api-plan`（後端 API 設計）與 `/axb-data-plan`（後端資料設計）。
 
@@ -188,7 +188,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 4. 平行執行：
    PM: /axb-spec-by-example    產出可供 review 的驗收 Journey。
        /ui-plan            根據驗收 Gherkin 完成 Prototyping。
-   RD: /technical-research 研究技術決策並更新 techstack。
+   RD: /axb-technical-research 研究技術決策並更新 techstack。
 5. PM 確認 Gherkin 與 Prototyping 後 handoff 給 RD。
 6. /axb-system-analysis        建立 plan.md，並依 Wave 委派 API / data planners。
 7. /axb-dsl-refine             產出可執行的前後端 Gherkin 與 DSL。
@@ -211,7 +211,7 @@ axb-constitution
 axb-specify
 axb-clarify-over-specs
 axb-spec-by-example
-technical-research
+axb-technical-research
 axb-system-analysis
 axb-api-plan
 axb-data-plan
@@ -259,6 +259,6 @@ RD 把驗收標準轉成系統設計、可執行的測試、任務與產品程�
 
 本 repo 使用 [Apache License 2.0](LICENSE)。
 
-`axb-specify`、`axb-clarify-over-specs`、`axb-tasks`、`axb-implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
+`axb-specify`、`axb-clarify-over-specs`、`axb-tasks`、`axb-implement` 與 `axb-technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
 
 repo 出處標註請見 [`NOTICE`](NOTICE)。

@@ -38,7 +38,7 @@
 # Rule 2 - 每輪 research clarify 只處理最高影響的 1 至 3 題
 
 - Level: `MUST`
-- `technical-research` 在委派 `/axb-clarify` 前，必須先自行排序研究缺口，只把本輪最高影響的 1 至 3 題交給 `/axb-clarify`。
+- `axb-technical-research` 在委派 `/axb-clarify` 前，必須先自行排序研究缺口，只把本輪最高影響的 1 至 3 題交給 `/axb-clarify`。
 - 若高影響缺口超過 3 題，應保留最關鍵的 1 至 3 題先問，其餘風險可留在 artifact 中揭露或待下一輪。
 - 不可把未整理的一長串技術問題原樣傾倒給 `/axb-clarify`。
 
@@ -96,7 +96,7 @@
 # Rule 4 - 產品範圍已拍板的不得重問；BDD techstack、測試策略、系統有哪些端不算在內
 
 - Level: `SHOULD`
-- 當 `/axb-specify` 已在 `spec.md` 中明確拍板產品功能邊界、第一版做／不做、成功標準或業務限制時，`technical-research` 應直接沿用，不應把同一產品問題再次交給 `/axb-clarify`。
+- 當 `/axb-specify` 已在 `spec.md` 中明確拍板產品功能邊界、第一版做／不做、成功標準或業務限制時，`axb-technical-research` 應直接沿用，不應把同一產品問題再次交給 `/axb-clarify`。
 - 下列三題即使 `spec.md` 假設或範圍已經寫了答案，仍必須依 `rules/AIxBDD必問問題與起始專案介面澄清判準.md` 處理，不得用本條跳過：
   - BDD techstack
   - 測試策略
