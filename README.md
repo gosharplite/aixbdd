@@ -105,7 +105,7 @@ Feature: 推進銷售機會
       And 銷售機會維持原本階段
 ```
 
-#### `/ui-plan`
+#### `/axb-ui-plan`
 
 由 PM 在 `/axb-spec-by-example` 後執行，根據已確認的驗收 Gherkin 完成 Prototyping。
 
@@ -114,7 +114,7 @@ Feature: 推進銷售機會
 - PM 此時需花時間確保雛形的 UI/UX 滿足所需。
 - PM 確認驗收標準 Gherkin 與雛形後，需求正式交接給 RD 下去系統整合開發。
 
-`spec.md` 完成後，RD 可以在 PM 執行 `/axb-spec-by-example` 與 `/ui-plan` 的同時，平行執行 `/axb-technical-research`。
+`spec.md` 完成後，RD 可以在 PM 執行 `/axb-spec-by-example` 與 `/axb-ui-plan` 的同時，平行執行 `/axb-technical-research`。
 
 ### RD 進行系統規劃
 
@@ -139,7 +139,7 @@ Feature: 推進銷售機會
 
 `/axb-system-analysis` 依本次需求是否涉及後端，委派 `/axb-api-plan`（後端 API 設計）與 `/axb-data-plan`（後端資料設計）。
 
-它不會重做 `/ui-plan`。雛形已由 PM 完成；若本次涉及前端，前端 RD 再 review 一次既有的 `ui-plan.md` 與靜態雛形，確認目前技術邊界下可以落地。其他 RD 不需要重做或重看 UI。
+它不會重做 `/axb-ui-plan`。雛形已由 PM 完成；若本次涉及前端，前端 RD 再 review 一次既有的 `ui-plan.md` 與靜態雛形，確認目前技術邊界下可以落地。其他 RD 不需要重做或重看 UI。
 
 完成後，RD 需要 review：
 
@@ -187,7 +187,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 3. /axb-clarify-over-specs     選用；進一步確認產出的 spec。
 4. 平行執行：
    PM: /axb-spec-by-example    產出可供 review 的驗收 Journey。
-       /ui-plan            根據驗收 Gherkin 完成 Prototyping。
+       /axb-ui-plan            根據驗收 Gherkin 完成 Prototyping。
    RD: /axb-technical-research 研究技術決策並更新 techstack。
 5. PM 確認 Gherkin 與 Prototyping 後 handoff 給 RD。
 6. /axb-system-analysis        建立 plan.md，並依 Wave 委派 API / data planners。
@@ -215,7 +215,7 @@ axb-technical-research
 axb-system-analysis
 axb-api-plan
 axb-data-plan
-ui-plan
+axb-ui-plan
 axb-dsl-refine
 axb-truth-delta
 axb-tasks

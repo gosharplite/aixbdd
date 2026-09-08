@@ -1,6 +1,6 @@
 ---
 name: axb-system-analysis
-description: 在 plan package 的 `spec.md`、`research.md`、`truth-delta.md` 與 `specs/truth/**` 基礎上，盤點本次需求涉及的系統介面與分析 wave，產出 plan-side `plan.md`，並把 plan package、truth root、truth-delta path 傳給 `/axb-api-plan`、`/axb-data-plan`、`/ui-plan`。
+description: 在 plan package 的 `spec.md`、`research.md`、`truth-delta.md` 與 `specs/truth/**` 基礎上，盤點本次需求涉及的系統介面與分析 wave，產出 plan-side `plan.md`，並把 plan package、truth root、truth-delta path 傳給 `/axb-api-plan`、`/axb-data-plan`、`/axb-ui-plan`。
 disable-model-invocation: true
 ---
 
@@ -32,5 +32,5 @@ disable-model-invocation: true
 ## Phase 4 -- 委派 planner 並交付
 
 1. READ 需要判斷 planner 對應時，讀取 `rules/分析介面委派與planner對應判準.md`。
-2. DELEGATE 依 Wave 順序將 API 介面交給 `/axb-api-plan`、資料介面交給 `/axb-data-plan`、UI 介面交給 `/ui-plan`；每次 handoff 都必須包含 plan package path、truth root、truth-delta path、介面名稱與分析重點。
+2. DELEGATE 依 Wave 順序將 API 介面交給 `/axb-api-plan`、資料介面交給 `/axb-data-plan`、UI 介面交給 `/axb-ui-plan`；每次 handoff 都必須包含 plan package path、truth root、truth-delta path、介面名稱與分析重點。
 3. WRITE 向使用者回報 `plan.md`、系統介面數量、Wave 數量、委派到哪些 planner，以及是否可進入 `/axb-dsl-refine` 或 `/axb-tasks`。

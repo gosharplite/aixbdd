@@ -1,12 +1,12 @@
 ---
-name: ui-plan
-description: 根據 plan package、axb-system-analysis handoff、truth-delta 與現有 truth，產出 plan-side `ui/**` 設計與靜態雛形。`ui-plan` 不是 truth owner，不寫入 `specs/truth/**`，但必須讀 truth-delta 以對齊本輪 API/data/feature truth 變更。
+name: axb-ui-plan
+description: 根據 plan package、axb-system-analysis handoff、truth-delta 與現有 truth，產出 plan-side `ui/**` 設計與靜態雛形。`axb-ui-plan` 不是 truth owner，不寫入 `specs/truth/**`，但必須讀 truth-delta 以對齊本輪 API/data/feature truth 變更。
 disable-model-invocation: true
 ---
 
 # UI Plan
 
-`ui-plan` 只產出本次迭代的 UI plan 與靜態雛形。UI artifact 留在 plan package，作為實作參考與評審材料，不是系統 truth。
+`axb-ui-plan` 只產出本次迭代的 UI plan 與靜態雛形。UI artifact 留在 plan package，作為實作參考與評審材料，不是系統 truth。
 
 # SOP
 

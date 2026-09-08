@@ -1,7 +1,7 @@
 # Rule 1 - 多頁雛形固定以 `ui/index.html` 作為入口
 
 - Level: `MUST`
-- 若 feature 的真實產品流程需要跨頁，`ui-plan` 必須固定使用 `ui/index.html` 作為雛形入口頁。
+- 若 feature 的真實產品流程需要跨頁，`axb-ui-plan` 必須固定使用 `ui/index.html` 作為雛形入口頁。
 - 入口頁本身也必須是產品的一部分，而不是 sitemap、說明頁或純連結目錄。
 - 若 feature 不需要跨頁，仍至少要有一個可操作的 HTML 頁面。
 
@@ -29,7 +29,7 @@ ui/index.html
 # Rule 2 - 雛形必須覆蓋從入口到主要結果的完整使用者流程
 
 - Level: `MUST`
-- `ui-plan` 產出的 HTML 雛形至少要覆蓋本次 feature 的主流程入口、關鍵中間狀態與主要結果頁。
+- `axb-ui-plan` 產出的 HTML 雛形至少要覆蓋本次 feature 的主流程入口、關鍵中間狀態與主要結果頁。
 - 不可只做單一好看的頁面，卻缺少流程中的等待、錯誤、結果或回合狀態。
 - 若畫面數量需要裁切，應優先保留完整流程，而不是只保留視覺最吸睛的片段。
 
