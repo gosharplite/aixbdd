@@ -52,7 +52,7 @@
 
 判定：
 - 尚未 ready
-- 建議再跑一次 `/clarify-over-specs`
+- 建議再跑一次 `/axb-clarify-over-specs`
 ```
 
 ## Bad Example
@@ -77,7 +77,7 @@
   - 哪些 section 被更新
   - checklist before / after 狀態，或無 checklist 可回刷
   - 哪些高影響缺口已解決、哪些仍 deferred 或 outstanding
-  - 是否已 ready，以及建議下一步應進 `/plan` 或稍後再跑 `/clarify-over-specs`
+  - 是否已 ready，以及建議下一步應進 `/plan` 或稍後再跑 `/axb-clarify-over-specs`
 - 完成回報的重點是讓使用者與後續 skill 都能知道：這輪到底清掉了哪些風險，還剩什麼不能假裝沒看到。
 - 若本輪沒有進 `/axb-clarify`，也要說明原因，例如所有高影響缺口皆已清楚，或僅剩低風險 deferred 細節。
 
@@ -93,7 +93,7 @@
 - checklist：12/16 -> 14/16
 - deferred：斷線恢復策略
 - ready：否
-- 建議下一步：再跑一次 `/clarify-over-specs`
+- 建議下一步：再跑一次 `/axb-clarify-over-specs`
 ```
 
 ## Bad Example

@@ -49,7 +49,7 @@ RD 直接把需求標準落地成可運作的系統。
 - 正常流程、拒絕情況與重要邊界是否都有被寫出來；
 - 輸入裡的舉例、證明點、狀態／公式是否還找得到，有沒有掛錯地方。
 
-#### `/clarify-over-specs`（選用）
+#### `/axb-clarify-over-specs`（選用）
 
 當 PM 希望在寫 Gherkin 前，再完整請 AI 檢查自己的需求邏輯是否完備時執行。
 
@@ -184,7 +184,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 ```text
 1. /constitution           必要時建立或調整 artifact 規則。
 2. /specify                建立新的 plan package。
-3. /clarify-over-specs     選用；進一步確認產出的 spec。
+3. /axb-clarify-over-specs     選用；進一步確認產出的 spec。
 4. 平行執行：
    PM: /spec-by-example    產出可供 review 的驗收 Journey。
        /ui-plan            根據驗收 Gherkin 完成 Prototyping。
@@ -209,7 +209,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 ```text
 constitution
 specify
-clarify-over-specs
+axb-clarify-over-specs
 spec-by-example
 technical-research
 system-analysis
@@ -259,6 +259,6 @@ RD 把驗收標準轉成系統設計、可執行的測試、任務與產品程�
 
 本 repo 使用 [Apache License 2.0](LICENSE)。
 
-`specify`、`clarify-over-specs`、`tasks`、`implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
+`specify`、`axb-clarify-over-specs`、`tasks`、`implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
 
 repo 出處標註請見 [`NOTICE`](NOTICE)。

@@ -1,5 +1,5 @@
 ---
-name: clarify-over-specs
+name: axb-clarify-over-specs
 description: 在 `/specify` 產出 `spec.md` 後，主動掃描整份 spec 的高影響需求缺口；若仍有會影響規格正確性、驗收標準或 readiness 的問題，先委派 `/axb-clarify` 訪談使用者，再把答案回寫到 spec、清理矛盾並回刷 checklist。Use when the user asks for post-spec requirement clarification, wants a generated spec professionally reviewed before `/plan`, or needs a spec-level clarify pass after `/specify`.
 disable-model-invocation: true
 ---
@@ -35,4 +35,4 @@ disable-model-invocation: true
 
 ## Phase 5 -- 交付結果與後續 handoff
 
-1. WRITE 先讀取 `templates/clarify-over-specs-report.md` 與 `templates/clarify-over-specs-report.example.md`，再依其要求向使用者回報本次目標 `SPEC_FILE`、是否進入 `/axb-clarify`、實際處理的高影響缺口、更新 section、checklist 變化、仍 deferred 的風險，以及建議下一步應直接進 `/plan` 或稍後再執行一次 `/clarify-over-specs`。
+1. WRITE 先讀取 `templates/clarify-over-specs-report.md` 與 `templates/clarify-over-specs-report.example.md`，再依其要求向使用者回報本次目標 `SPEC_FILE`、是否進入 `/axb-clarify`、實際處理的高影響缺口、更新 section、checklist 變化、仍 deferred 的風險，以及建議下一步應直接進 `/plan` 或稍後再執行一次 `/axb-clarify-over-specs`。
