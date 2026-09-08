@@ -32,4 +32,4 @@ disable-model-invocation: true
 ## Phase 4 -- 更新 truth-delta 並交付
 
 1. DELEGATE 呼叫 `/truth-delta`，傳入 plan package、truth root、owner `/axb-dsl-refine`、受影響模組、feature、模組 DSL、相關共用 DSL rows 與本輪 truth 改動列；DSL row 僅搬移權威位置而未改語意時，明示舊位置、新位置與「語意不變」。
-2. WRITE 向使用者回報更新的 interface feature/dsl truth、truth-delta 更新結果、已澄清決策、剩餘阻塞缺口，以及是否可交給 `/tasks` 或 `/axb-bdd`。
+2. WRITE 向使用者回報更新的 interface feature/dsl truth、truth-delta 更新結果、已澄清決策、剩餘阻塞缺口，以及是否可交給 `/axb-tasks` 或 `/axb-bdd`。

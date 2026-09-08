@@ -162,7 +162,7 @@ RD 須在此階段確認系統設計是正確且高效率的。
 
 ### RD 拆解並執行實作
 
-#### `/tasks`
+#### `/axb-tasks`
 
 由 RD 執行，將本次開發的系統規劃，拆解成 BDD 開發任務清單 -- `tasks.md`。
 
@@ -192,7 +192,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 5. PM 確認 Gherkin 與 Prototyping 後 handoff 給 RD。
 6. /axb-system-analysis        建立 plan.md，並依 Wave 委派 API / data planners。
 7. /axb-dsl-refine             產出可執行的前後端 Gherkin 與 DSL。
-8. /tasks                  產出 BDD 開發任務清單。
+8. /axb-tasks                  產出 BDD 開發任務清單。
 9. /axb-implement              依任務清單開發到位並通過測試。
 ```
 
@@ -218,7 +218,7 @@ axb-data-plan
 ui-plan
 axb-dsl-refine
 truth-delta
-tasks
+axb-tasks
 axb-implement
 axb-bdd
 ```
@@ -259,6 +259,6 @@ RD 把驗收標準轉成系統設計、可執行的測試、任務與產品程�
 
 本 repo 使用 [Apache License 2.0](LICENSE)。
 
-`axb-specify`、`axb-clarify-over-specs`、`tasks`、`axb-implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
+`axb-specify`、`axb-clarify-over-specs`、`axb-tasks`、`axb-implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
 
 repo 出處標註請見 [`NOTICE`](NOTICE)。

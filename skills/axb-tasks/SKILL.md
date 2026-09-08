@@ -1,12 +1,12 @@
 ---
-name: tasks
+name: axb-tasks
 description: 根據 plan package 的 `spec.md`、`plan.md`、`research.md`、`ui/**`，以及 `truth-delta.md` 與 `specs/truth/**` 產出可直接執行的 `tasks.md`。先寫 Setup 與 Foundational，測試層集中在 Phase 3 `Test Alignment & Implementation`；Feature phase 只留 Green / Refactor 或 CODE-REMOVE / REGRESSION。
 disable-model-invocation: true
 ---
 
 # Tasks Skill
 
-`tasks` 是 plan-side execution planner。它不修改 truth，只把本次 plan、truth-delta 與目前 truth 轉成 `/axb-implement` 可逐步執行的 `tasks.md`。本輪新增技術先寫 Setup；再寫 Foundational；測試層在寫產品碼之前一次對齊最新版 truth。盤點既有自動化測試只發生在寫 Phase 3 時，不得輸出成 implement task。
+`axb-tasks` 是 plan-side execution planner。它不修改 truth，只把本次 plan、truth-delta 與目前 truth 轉成 `/axb-implement` 可逐步執行的 `tasks.md`。本輪新增技術先寫 Setup；再寫 Foundational；測試層在寫產品碼之前一次對齊最新版 truth。盤點既有自動化測試只發生在寫 Phase 3 時，不得輸出成 implement task。
 
 # SOP
 

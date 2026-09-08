@@ -30,4 +30,4 @@ disable-model-invocation: true
 ## Phase 4 -- 更新 truth-delta 並交付
 
 1. DELEGATE 呼叫 `/truth-delta`，傳入 plan package、truth root、owner `/axb-data-plan` 與本輪 data truth 改動列。
-2. WRITE 向使用者回報更新的 data truth 路徑、主要實體與生命週期變更、是否進入 `/axb-clarify`、truth-delta 更新結果，以及是否可交給後續實作或 `/tasks`。
+2. WRITE 向使用者回報更新的 data truth 路徑、主要實體與生命週期變更、是否進入 `/axb-clarify`、truth-delta 更新結果，以及是否可交給後續實作或 `/axb-tasks`。
