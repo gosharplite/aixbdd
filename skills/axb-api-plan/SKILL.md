@@ -1,6 +1,6 @@
 ---
 name: axb-api-plan
-description: Truth owner skill。根據 plan package、system-analysis handoff 與現有 API truth，更新 `specs/truth/contracts/**`，支援 ADD / MODIFY / DELETE / NOOP API 語意單元，並委派 `/truth-delta` 記錄本輪 API truth 改動。
+description: Truth owner skill。根據 plan package、axb-system-analysis handoff 與現有 API truth，更新 `specs/truth/contracts/**`，支援 ADD / MODIFY / DELETE / NOOP API 語意單元，並委派 `/truth-delta` 記錄本輪 API truth 改動。
 disable-model-invocation: true
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: axb-dsl-refine
-description: Truth owner skill。承接 plan package 的 acceptance Gherkin 與 system-analysis 產物，將業務 Journey 拆成 interface-level executable feature files 與 DSL，並更新 `specs/truth/features/backend/**`、`specs/truth/features/frontend/**`。完成後委派 `/truth-delta` 記錄 feature/dsl truth 改動。
+description: Truth owner skill。承接 plan package 的 acceptance Gherkin 與 axb-system-analysis 產物，將業務 Journey 拆成 interface-level executable feature files 與 DSL，並更新 `specs/truth/features/backend/**`、`specs/truth/features/frontend/**`。完成後委派 `/truth-delta` 記錄 feature/dsl truth 改動。
 disable-model-invocation: true
 ---
 

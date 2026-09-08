@@ -133,11 +133,11 @@ Feature: 推進銷售機會
 
 確認 `research.md` 沒有問題後，RD 再 review `techstack.md`，確認目前專案的完整技術選型仍符合預期，而不是只確認這次新增的部分。
 
-#### `/system-analysis`
+#### `/axb-system-analysis`
 
 在 `/technical-research` 執行完之後，RD 可執行。
 
-`/system-analysis` 依本次需求是否涉及後端，委派 `/axb-api-plan`（後端 API 設計）與 `/axb-data-plan`（後端資料設計）。
+`/axb-system-analysis` 依本次需求是否涉及後端，委派 `/axb-api-plan`（後端 API 設計）與 `/axb-data-plan`（後端資料設計）。
 
 它不會重做 `/ui-plan`。雛形已由 PM 完成；若本次涉及前端，前端 RD 再 review 一次既有的 `ui-plan.md` 與靜態雛形，確認目前技術邊界下可以落地。其他 RD 不需要重做或重看 UI。
 
@@ -190,13 +190,13 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
        /ui-plan            根據驗收 Gherkin 完成 Prototyping。
    RD: /technical-research 研究技術決策並更新 techstack。
 5. PM 確認 Gherkin 與 Prototyping 後 handoff 給 RD。
-6. /system-analysis        建立 plan.md，並依 Wave 委派 API / data planners。
+6. /axb-system-analysis        建立 plan.md，並依 Wave 委派 API / data planners。
 7. /axb-dsl-refine             產出可執行的前後端 Gherkin 與 DSL。
 8. /tasks                  產出 BDD 開發任務清單。
 9. /axb-implement              依任務清單開發到位並通過測試。
 ```
 
-需求涉及對應 interface 時，`/system-analysis` 會委派 `/axb-api-plan` 與 `/axb-data-plan`。若涉及前端，前端 RD 另外 review PM 已完成的 UI plan 與靜態雛形。
+需求涉及對應 interface 時，`/axb-system-analysis` 會委派 `/axb-api-plan` 與 `/axb-data-plan`。若涉及前端，前端 RD 另外 review PM 已完成的 UI plan 與靜態雛形。
 
 `/truth-delta` 由 truth owner skills 呼叫，通常不需要由使用者手動執行。
 
@@ -212,7 +212,7 @@ axb-specify
 axb-clarify-over-specs
 axb-spec-by-example
 technical-research
-system-analysis
+axb-system-analysis
 axb-api-plan
 axb-data-plan
 ui-plan

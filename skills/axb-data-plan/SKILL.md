@@ -1,6 +1,6 @@
 ---
 name: axb-data-plan
-description: Truth owner skill。根據 plan package、system-analysis handoff 與現有 data truth，更新 `specs/truth/data/**`，支援 ADD / MODIFY / DELETE / NOOP 資料語意單元，並委派 `/truth-delta` 記錄本輪 data truth 改動。
+description: Truth owner skill。根據 plan package、axb-system-analysis handoff 與現有 data truth，更新 `specs/truth/data/**`，支援 ADD / MODIFY / DELETE / NOOP 資料語意單元，並委派 `/truth-delta` 記錄本輪 data truth 改動。
 disable-model-invocation: true
 ---
 

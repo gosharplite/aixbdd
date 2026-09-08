@@ -1,7 +1,7 @@
 # Rule 1 - `Wave` 執行順序必須服從 `plan.md`
 
 - Level: `MUST`
-- `system-analysis` 在委派各 planner skill 時，必須依 `plan.md` 已定義的 `Wave` 順序執行，不可因為某個 planner 看起來能先做，就跳過前一波直接啟動後一波。
+- `axb-system-analysis` 在委派各 planner skill 時，必須依 `plan.md` 已定義的 `Wave` 順序執行，不可因為某個 planner 看起來能先做，就跳過前一波直接啟動後一波。
 - 同一個 `Wave` 內允許平行委派，但前提是這些介面在 `plan.md` 中已被判定為可平行分析。
 - 若某 planner 的分析明顯依賴前一個 `Wave` 才會產生的資訊，則必須等前一個 `Wave` 完成後再委派。
 
@@ -48,7 +48,7 @@
 # Rule 2 - planner 對應必須依分析責任邊界決定
 
 - Level: `MUST`
-- `system-analysis` 必須依每個系統介面的主要分析責任與產物邊界決定委派對象，而不是只看名稱中是否出現某個技術詞。
+- `axb-system-analysis` 必須依每個系統介面的主要分析責任與產物邊界決定委派對象，而不是只看名稱中是否出現某個技術詞。
 - 玩家可見流程、畫面狀態、互動節奏、資訊揭露與錯誤回饋，應委派給 `/ui-plan`。
 - 實體、欄位、狀態持有、生命週期、資料關聯與儲存責任，應委派給 `/axb-data-plan`。
 - API 契約、事件協議、請求回應形狀、狀態轉移入口與錯誤碼語意，應委派給 `/axb-api-plan`。

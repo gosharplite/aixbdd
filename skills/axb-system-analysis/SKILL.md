@@ -1,12 +1,12 @@
 ---
-name: system-analysis
+name: axb-system-analysis
 description: 在 plan package 的 `spec.md`、`research.md`、`truth-delta.md` 與 `specs/truth/**` 基礎上，盤點本次需求涉及的系統介面與分析 wave，產出 plan-side `plan.md`，並把 plan package、truth root、truth-delta path 傳給 `/axb-api-plan`、`/axb-data-plan`、`/ui-plan`。
 disable-model-invocation: true
 ---
 
 # System Analysis
 
-`system-analysis` 是 planner orchestration skill。它本身不修改 truth，但必須把本輪 plan 與既有 truth 的差異帶給後續 owner，避免 API、data、UI 分析各自推理不同版本。
+`axb-system-analysis` 是 planner orchestration skill。它本身不修改 truth，但必須把本輪 plan 與既有 truth 的差異帶給後續 owner，避免 API、data、UI 分析各自推理不同版本。
 
 # SOP
 
@@ -14,7 +14,7 @@ disable-model-invocation: true
 
 1. READ 讀取使用者需求、呼叫者要求、目標 plan package 的 `spec.md`、`research.md`、`truth-delta.md`、既有 `plan.md`、`specs/truth/techstack.md` 與相關 `specs/truth/**`。
 2. READ 讀取 `templates/plan.md` 與 `templates/plan.example.md`，確認 `plan.md` 的固定結構與完成樣貌。
-3. READ 讀取 `.agents/constitution/CONSTITUTION.md`、`.agents/constitution/shared.md` 與 `.agents/constitution/skills/system-analysis/plan.md`。
+3. READ 讀取 `.agents/constitution/CONSTITUTION.md`、`.agents/constitution/shared.md` 與 `.agents/constitution/skills/axb-system-analysis/plan.md`。
 4. WRITE 若 plan package 尚未有 `plan.md` 父層，建立必要目錄；本 skill 不建立或修改 `specs/truth/**`。
 
 ## Phase 2 -- 收斂系統介面盤點與 clarify 策略
