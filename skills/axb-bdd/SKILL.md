@@ -12,14 +12,14 @@ disable-model-invocation: true
 - `/axb-bdd` 只在使用者指定的單一介面 `feature file` 或其明確區塊內推進工作。
 - `/axb-bdd` 有 `red`、`green`、`refactor` 三個入口；每次只進入其中一個入口。
 - 同一次 invocation 可以在指定範疇內 sequentially 推進多個 slices，但同一時刻只處理一個 slice。
-- 若 `/axb-bdd` 是由 `/implement` 的單一 task 委派，必須服從該 task 的單一 `slice`、單一 `requested step` 與當前 scope，不能順手吞掉後續 task。
+- 若 `/axb-bdd` 是由 `/axb-implement` 的單一 task 委派，必須服從該 task 的單一 `slice`、單一 `requested step` 與當前 scope，不能順手吞掉後續 task。
 - 若發現 `feature file` 或 `dsl.md` 有高影響缺口，必須停止並回交 `/axb-dsl-refine` 或使用者指定的上游流程。
 
 # SOP
 
 ## Phase 1 -- 對齊上游交付、測試入口與本輪範疇
 
-1. READ 讀取使用者需求、指定的介面 `feature file` 或其明確區塊、同模組 `dsl.md`、該 feature 實際使用的介面根共用 `dsl.md` rows、相關測試程式與產品碼，確認本輪入口是 `red`、`green` 或 `refactor`，以及使用者圈定的範疇；若由 `/implement` 委派，額外確認當前 task 只授權單一 `slice` 與單一 `requested step`。
+1. READ 讀取使用者需求、指定的介面 `feature file` 或其明確區塊、同模組 `dsl.md`、該 feature 實際使用的介面根共用 `dsl.md` rows、相關測試程式與產品碼，確認本輪入口是 `red`、`green` 或 `refactor`，以及使用者圈定的範疇；若由 `/axb-implement` 委派，額外確認當前 task 只授權單一 `slice` 與單一 `requested step`。
 2. READ 若需要確認模組化 truth 的承接方式或專案既有 symlink 策略，讀取 `rules/模組化Truth按需承接與Symlink判準.md`。
 3. READ 若需要確認本 skill 可承接的上游交付物、何時必須停止，或何種缺口應回交上游，讀取 `rules/上游交付承接與回交判準.md`。
 4. THINK 若本輪範疇、已載入 DSL、介面邊界或上游交付物仍有高影響缺口，先收斂最小必要澄清點。

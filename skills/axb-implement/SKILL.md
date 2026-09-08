@@ -1,12 +1,12 @@
 ---
-name: implement
+name: axb-implement
 description: 根據 plan package 的 `tasks.md`，以 don't stop until deliver / One-Shot 執行已解鎖 task。一輪恰好 1 個 task 或 Parallel Hint 批次；驗證後立刻回寫 `[X]` 再繼續，直到交付。不能跳步驟。
 disable-model-invocation: true
 ---
 
 # Implement
 
-`implement` 將 `tasks.md` 視為唯一執行控制平面，但執行上下文必須包含 plan package 與 `truth-delta.md`。它負責交付 plan，不負責重新定義 truth；若發現 truth 與 tasks 明顯矛盾，應停止受影響 task 並回報需要上游修正。
+`axb-implement` 將 `tasks.md` 視為唯一執行控制平面，但執行上下文必須包含 plan package 與 `truth-delta.md`。它負責交付 plan，不負責重新定義 truth；若發現 truth 與 tasks 明顯矛盾，應停止受影響 task 並回報需要上游修正。
 
 ## Operating Principles
 

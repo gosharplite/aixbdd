@@ -1,14 +1,14 @@
 # Rule 1 - 執行前必須判斷 truth delta action
 
 - Level: `MUST`
-- `/implement` 開始任務前必須從 `truth-delta.md` 與 `tasks.md` 判斷當前 task 對應 `ADD`、`MODIFY`、`DELETE` 或 `NOOP`。
+- `/axb-implement` 開始任務前必須從 `truth-delta.md` 與 `tasks.md` 判斷當前 task 對應 `ADD`、`MODIFY`、`DELETE` 或 `NOOP`。
 - 若 task 未明確連到 truth-delta row，但屬於受 truth 變更影響的 phase，必須依 phase 的 `Shared Must Read` 與 `Boundary` 推回 action。
 - 本輪 Feature 用到、尚無 stepdef、因而不在 truth-delta 的 `[BDD-RED]`，action 視為 `ADD`。
 - 若 action 無法判定且會影響測試或產品行為，應停止並回報 `tasks.md` 需要補明確參照。
 
 ## Good Example
 
-- 這個例子是好的，因為 implement 先判斷當前 task 是 MODIFY。
+- 這個例子是好的，因為 axb-implement 先判斷當前 task 是 MODIFY。
 
 ```md
 T008 [BDD-ALIGN]
@@ -76,10 +76,10 @@ Phase 4C REGRESSION: 跑 Test Scope
 # Rule 4 - 只有 Green / Refactor 才委派 `/axb-bdd`，並帶 Test Scope
 
 - Level: `MUST`
-- `/implement` 只在 `[BDD-GREEN]` 或 `[BDD-REFACTOR]` 呼叫 `/axb-bdd`。
+- `/axb-implement` 只在 `[BDD-GREEN]` 或 `[BDD-REFACTOR]` 呼叫 `/axb-bdd`。
 - 呼叫時必須明確提供 `Test Scope`、truth delta action、affected truth rows、同模組 `dsl.md`、該 feature 實際使用的介面根共用 DSL rows 與 requested step。
 - 若該 feature 沒有使用介面根共用 DSL row，必須明示「無」。
-- `/implement` 只傳遞 `tasks.md` 已綁定的精確 DSL 參照，不重新判斷句型應屬模組或共用。
+- `/axb-implement` 只傳遞 `tasks.md` 已綁定的精確 DSL 參照，不重新判斷句型應屬模組或共用。
 - Phase 3 的 `[BDD-ALIGN]`、`[BDD-REMOVE]`、`[BDD-RED]` 不委派 `/axb-bdd`。
 
 ## Good Example

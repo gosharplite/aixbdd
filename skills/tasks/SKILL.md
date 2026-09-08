@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Tasks Skill
 
-`tasks` 是 plan-side execution planner。它不修改 truth，只把本次 plan、truth-delta 與目前 truth 轉成 `/implement` 可逐步執行的 `tasks.md`。本輪新增技術先寫 Setup；再寫 Foundational；測試層在寫產品碼之前一次對齊最新版 truth。盤點既有自動化測試只發生在寫 Phase 3 時，不得輸出成 implement task。
+`tasks` 是 plan-side execution planner。它不修改 truth，只把本次 plan、truth-delta 與目前 truth 轉成 `/axb-implement` 可逐步執行的 `tasks.md`。本輪新增技術先寫 Setup；再寫 Foundational；測試層在寫產品碼之前一次對齊最新版 truth。盤點既有自動化測試只發生在寫 Phase 3 時，不得輸出成 implement task。
 
 # SOP
 

@@ -170,7 +170,7 @@ RD 須在此階段確認系統設計是正確且高效率的。
 
 此階段不需要 Review，可信任 AI 的產出。
 
-#### `/implement`
+#### `/axb-implement`
 
 由 RD 執行，讓 AI 針對上一步的任務清單，One-Shot 開發到位且通過所有測試。
 
@@ -193,7 +193,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 6. /system-analysis        建立 plan.md，並依 Wave 委派 API / data planners。
 7. /axb-dsl-refine             產出可執行的前後端 Gherkin 與 DSL。
 8. /tasks                  產出 BDD 開發任務清單。
-9. /implement              依任務清單開發到位並通過測試。
+9. /axb-implement              依任務清單開發到位並通過測試。
 ```
 
 需求涉及對應 interface 時，`/system-analysis` 會委派 `/axb-api-plan` 與 `/axb-data-plan`。若涉及前端，前端 RD 另外 review PM 已完成的 UI plan 與靜態雛形。
@@ -219,7 +219,7 @@ ui-plan
 axb-dsl-refine
 truth-delta
 tasks
-implement
+axb-implement
 axb-bdd
 ```
 
@@ -259,6 +259,6 @@ RD 把驗收標準轉成系統設計、可執行的測試、任務與產品程�
 
 本 repo 使用 [Apache License 2.0](LICENSE)。
 
-`specify`、`axb-clarify-over-specs`、`tasks`、`implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
+`specify`、`axb-clarify-over-specs`、`tasks`、`axb-implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
 
 repo 出處標註請見 [`NOTICE`](NOTICE)。
