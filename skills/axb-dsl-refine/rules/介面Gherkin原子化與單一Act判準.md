@@ -215,7 +215,7 @@ Rule: 非自己回合時按鈕必須停用
 # Rule 8 - 參考範例不得覆寫本 RuleFile 的原子化要求
 
 - Level: `MUST`
-- `gherkin-and-dsl` 的範例可用來理解業務語言、切檔、DataTable 與 DSL 完成樣貌，但不得用其中的流程型 Example 覆寫本 RuleFile。
+- `axb-gherkin-and-dsl` 的範例可用來理解業務語言、切檔、DataTable 與 DSL 完成樣貌，但不得用其中的流程型 Example 覆寫本 RuleFile。
 - 若參考範例含有第二個 When、動作型 And 或可再拆的 Rule，應只沿用不衝突的部分，並依本 RuleFile 重構後再使用。
 - 參考範例不是 acceptance 權威，也不是放寬介面測試顆粒度的例外來源。
 

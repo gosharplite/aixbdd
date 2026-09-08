@@ -1,6 +1,6 @@
 # Gherkin And DSL Standards
 
-這份標準是給 `gherkin-and-dsl` skill 用的詳細判準。原則只有一個：
+這份標準是給 `axb-gherkin-and-dsl` skill 用的詳細判準。原則只有一個：
 
 > Gherkin 要讓 PM 看得懂，DSL 要讓 AI / 測試作者幾乎不需要腦補就能落地成測試程式碼。
 

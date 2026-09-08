@@ -1,5 +1,5 @@
 ---
-name: gherkin-and-dsl
+name: axb-gherkin-and-dsl
 description: Evaluate and refactor Gherkin feature files and DSL vocabularies so they can be implemented as test code with minimal inference. Use when converting test plans into Gherkin, reviewing or tightening Given/When/Then sentences, deciding Rule/Background/Scenario Outline/DataTable structure, or checking whether Gherkin and DSL fully cover the intended test cases.
 disable-model-invocation: true
 ---
@@ -55,7 +55,7 @@ disable-model-invocation: true
 ## Phase 6 -- 檢查可落地性
 
 1. READ 重新讀取修改後的 feature files、同模組 DSL 與相關介面根共用 DSL。
-2. DELEGATE 執行 `uv run .agents/skills/gherkin-and-dsl/scripts/audit_feature_dsl_topology.py --root <features-root>`，機械檢查拓樸、DSL row 重複與每個 step 的唯一匹配，並保留輸出供後續判讀。
+2. DELEGATE 執行 `uv run skills/axb-gherkin-and-dsl/scripts/audit_feature_dsl_topology.py --root <features-root>`，機械檢查拓樸、DSL row 重複與每個 step 的唯一匹配，並保留輸出供後續判讀。
 3. THINK 結合稽核結果與已載入標準，判斷共用契約是否真的語意一致、每個 test case 是否完整覆蓋、Gherkin 是否維持業務語言、DSL 是否足以直接實作，以及 Then 是否超越表面輸出。
 4. WRITE 回報機械稽核結果、語意與結構決策、仍需收斂的句型，以及可直接交給 step definition / 測試實作的範圍。
 

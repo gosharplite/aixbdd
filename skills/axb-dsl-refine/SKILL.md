@@ -24,9 +24,9 @@ disable-model-invocation: true
 
 ## Phase 3 -- 更新 interface feature truth
 
-1. READ 讀取 `../gherkin-and-dsl/SKILL.md` 與 `../gherkin-and-dsl/STANDARDS.md`，承接其已掛載的 Gherkin、DSL 與唯一歸屬判準。
+1. READ 讀取 `../axb-gherkin-and-dsl/SKILL.md` 與 `../axb-gherkin-and-dsl/STANDARDS.md`，承接其已掛載的 Gherkin、DSL 與唯一歸屬判準。
 2. WRITE 依已載入規則在唯一權威位置建立、修改、移動或刪除受影響的 interface feature 與 DSL rows。
-3. DELEGATE 呼叫 `/gherkin-and-dsl` 檢查受影響介面，取得拓樸機械稽核、DSL 唯一歸屬、acceptance 覆蓋與 Gherkin 結構結果；若不符合，立即修正。
+3. DELEGATE 呼叫 `/axb-gherkin-and-dsl` 檢查受影響介面，取得拓樸機械稽核、DSL 唯一歸屬、acceptance 覆蓋與 Gherkin 結構結果；若不符合，立即修正。
 4. THINK 將 feature/dsl truth 改動整理為語意單元層級的 ADD / MODIFY / DELETE / NOOP 列。
 
 ## Phase 4 -- 更新 truth-delta 並交付

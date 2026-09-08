@@ -200,7 +200,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 
 `/truth-delta` 由 truth owner skills 呼叫，通常不需要由使用者手動執行。
 
-當 feature files 與 DSL 需要獨立 review 或重構時，可以使用 `/gherkin-and-dsl`。
+當 feature files 與 DSL 需要獨立 review 或重構時，可以使用 `/axb-gherkin-and-dsl`。
 
 ## 內含 Skills
 
@@ -226,7 +226,7 @@ axb-bdd
 共用 Gherkin 與 DSL 標準：
 
 ```text
-gherkin-and-dsl
+axb-gherkin-and-dsl
 ```
 
 目前這 15 支 skills 預期環境中另有可相容的 `/axb-clarify` skill。`/axb-clarify` 未包含在本 repo。
