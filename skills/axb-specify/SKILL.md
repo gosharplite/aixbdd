@@ -1,12 +1,12 @@
 ---
-name: specify
+name: axb-specify
 description: 將自然語言功能需求轉成新的 plan package。每次執行都建立下一個 `specs/plans/NNN-<slug>/`，產出 `spec.md`、`checklists/requirements.md` 與初始化 `truth-delta.md`；不得改寫舊 plan package，也不得寫入 `specs/truth/**`。
 disable-model-invocation: true
 ---
 
 # Specify
 
-`specify` 是每次迭代的 plan 起點。它只描述「這次要改什麼」，不直接修改系統 truth。即使本次需求是修改或刪除既有行為，也建立新的 plan package，讓舊 plan 保持歷史，讓 `specs/truth/**` 代表目前系統真相。
+`axb-specify` 是每次迭代的 plan 起點。它只描述「這次要改什麼」，不直接修改系統 truth。即使本次需求是修改或刪除既有行為，也建立新的 plan package，讓舊 plan 保持歷史，讓 `specs/truth/**` 代表目前系統真相。
 
 # SOP
 
@@ -15,7 +15,7 @@ disable-model-invocation: true
 1. READ 讀取使用者需求、呼叫者要求、目前 `specs/plans/` 下既有編號與 `specs/truth/**` 的高層現況，確認本次功能主題、範圍、語言要求與明示限制。
 2. READ 讀取 `templates/spec.template.md`、`templates/spec.example.md`、`templates/requirements-checklist.md` 與 `templates/requirements-checklist.example.md`，確認 spec 與 checklist 的固定結構。
 3. READ 讀取 `rules/Feature目錄命名與輸出定位判準.md`，確認下一個 `NNN-<slug>` plan package 命名方式與輸出定位。
-4. READ 讀取 `.agents/constitution/CONSTITUTION.md`、`.agents/constitution/shared.md`、`.agents/constitution/skills/specify/spec.md` 與 `.agents/constitution/skills/specify/requirements-checklist.md`，並將其中規則視為高於本地 artifact 規範的約束。
+4. READ 讀取 `.agents/constitution/CONSTITUTION.md`、`.agents/constitution/shared.md` 與 `.agents/constitution/skills/axb-specify/spec.md` 與 `.agents/constitution/skills/axb-specify/requirements-checklist.md`，並將其中規則視為高於本地 artifact 規範的約束。
 5. WRITE 建立 `specs/plans/NNN-<slug>/` 與 `checklists/`，並初始化 `truth-delta.md` 骨架；本 phase 不建立或修改 `specs/truth/**`。
 
 ## Phase 2 -- 收斂需求缺口與 clarify 策略

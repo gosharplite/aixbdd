@@ -23,14 +23,14 @@ RD 直接把需求標準落地成可運作的系統。
 
 ### PM 定義需求與驗收標準
 
-#### `/specify`
+#### `/axb-specify`
 
 由 PM 執行，將這次需求整理成 `spec.md` 與需求 checklist。
 
 快速開始：
 
 ```text
-/specify
+/axb-specify
 
 我想從零建立一個 CRM 系統：
 
@@ -183,7 +183,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 
 ```text
 1. /axb-constitution           必要時建立或調整 artifact 規則。
-2. /specify                建立新的 plan package。
+2. /axb-specify                建立新的 plan package。
 3. /axb-clarify-over-specs     選用；進一步確認產出的 spec。
 4. 平行執行：
    PM: /axb-spec-by-example    產出可供 review 的驗收 Journey。
@@ -208,7 +208,7 @@ RD 此時需要 Review 的就是程式的產出，直接操作系統看看是否
 
 ```text
 axb-constitution
-specify
+axb-specify
 axb-clarify-over-specs
 axb-spec-by-example
 technical-research
@@ -259,6 +259,6 @@ RD 把驗收標準轉成系統設計、可執行的測試、任務與產品程�
 
 本 repo 使用 [Apache License 2.0](LICENSE)。
 
-`specify`、`axb-clarify-over-specs`、`tasks`、`axb-implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
+`axb-specify`、`axb-clarify-over-specs`、`tasks`、`axb-implement` 與 `technical-research` skills 包含參考並改寫自 [GitHub Spec Kit](https://github.com/github/spec-kit) 的內容。GitHub Spec Kit 使用 MIT License；適用的著作權與授權聲明已保留在各 skill 目錄。
 
 repo 出處標註請見 [`NOTICE`](NOTICE)。

@@ -38,7 +38,7 @@
 # Rule 2 - 本輪 clarify 只收斂最高影響的 1 至 3 題
 
 - Level: `MUST`
-- `specify` 在委派 `/axb-clarify` 前，必須先自行排序缺口，只把本輪最高影響的 1 至 3 題交給 `/axb-clarify`。
+- `axb-specify` 在委派 `/axb-clarify` 前，必須先自行排序缺口，只把本輪最高影響的 1 至 3 題交給 `/axb-clarify`。
 - 若高影響缺口超過 3 題，應保留最關鍵的 1 至 3 題先問，其餘留待後續輪次或在 spec 中揭露剩餘風險。
 - 不可把未整理的一長串疑問原樣丟給 `/axb-clarify`。
 
@@ -96,7 +96,7 @@
 # Rule 4 - 委派 clarify 時必須遵守下游 skill 的 session 預算
 
 - Level: `SHOULD`
-- `specify` 在委派 `/axb-clarify` 時，應明示本輪只處理已排序的高影響題目，避免暗示下游 skill 無限制延伸提問。
+- `axb-specify` 在委派 `/axb-clarify` 時，應明示本輪只處理已排序的高影響題目，避免暗示下游 skill 無限制延伸提問。
 - 若先前輪次已使用部分 clarify 題數，應在本輪委派時保留剩餘預算，不可假設下游 skill 仍能無上限追問。
 - 若剩餘風險已可接受，應優先讓 spec 繼續，而不是耗盡 clarify 額度追求完美資訊。
 

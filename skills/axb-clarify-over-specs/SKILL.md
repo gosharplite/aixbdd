@@ -1,6 +1,6 @@
 ---
 name: axb-clarify-over-specs
-description: 在 `/specify` 產出 `spec.md` 後，主動掃描整份 spec 的高影響需求缺口；若仍有會影響規格正確性、驗收標準或 readiness 的問題，先委派 `/axb-clarify` 訪談使用者，再把答案回寫到 spec、清理矛盾並回刷 checklist。Use when the user asks for post-spec requirement clarification, wants a generated spec professionally reviewed before `/plan`, or needs a spec-level clarify pass after `/specify`.
+description: 在 `/axb-specify` 產出 `spec.md` 後，主動掃描整份 spec 的高影響需求缺口；若仍有會影響規格正確性、驗收標準或 readiness 的問題，先委派 `/axb-clarify` 訪談使用者，再把答案回寫到 spec、清理矛盾並回刷 checklist。Use when the user asks for post-spec requirement clarification, wants a generated spec professionally reviewed before `/plan`, or needs a spec-level clarify pass after `/axb-specify`.
 disable-model-invocation: true
 ---
 
@@ -12,7 +12,7 @@ disable-model-invocation: true
 
 ## Phase 1 -- 對齊目標 spec 與回寫範圍
 
-1. READ 讀取使用者需求、呼叫者要求、當前上下文、任何顯式覆寫參數，以及目前 feature 的 `spec.md` 與 `checklists/requirements.md`；確認本次要澄清的 spec 目標、是否存在 checklist、是否需要詳記完成回報。若找不到目標 `spec.md`，停止並要求使用者先執行 `/specify` 或明確指定目標 spec 路徑。
+1. READ 讀取使用者需求、呼叫者要求、當前上下文、任何顯式覆寫參數，以及目前 feature 的 `spec.md` 與 `checklists/requirements.md`；確認本次要澄清的 spec 目標、是否存在 checklist、是否需要詳記完成回報。若找不到目標 `spec.md`，停止並要求使用者先執行 `/axb-specify` 或明確指定目標 spec 路徑。
 2. THINK 若需要決定目標 `SPEC_FILE`、`CHECKLIST_FILE` 與覆寫優先順序，先讀取 `rules/目標spec定位與覆寫優先順序判準.md`，再依其要求收斂本次目標檔案與回寫範圍。
 
 ## Phase 2 -- 掃描全 spec 高影響缺口與 clarify 策略

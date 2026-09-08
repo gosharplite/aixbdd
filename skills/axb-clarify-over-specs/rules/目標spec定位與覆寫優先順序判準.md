@@ -34,7 +34,7 @@
 
 - Level: `MUST`
 - 若沒有顯式覆寫，目標 `SPEC_FILE` 必須依固定順序定位，不可臨場自由猜測：
-  1. 本輪上游 `/specify` 剛產出的 `SPEC_FILE`
+  1. 本輪上游 `/axb-specify` 剛產出的 `SPEC_FILE`
   2. 當前上下文中可唯一辨識的 feature directory 對應 `spec.md`
   3. 目前 IDE 焦點中的 `spec.md`
 - 若以上來源都不存在，或出現多個候選且無法唯一判定，必須停止並要求使用者指定目標，不可自行在多個 spec 間擇一。
@@ -46,8 +46,8 @@
 
 ```md
 條件：
-- 本輪剛執行完 `/specify`
-- `/specify` 已回報 `SPEC_FILE = specs/001-online-pvp-1a2b/spec.md`
+- 本輪剛執行完 `/axb-specify`
+- `/axb-specify` 已回報 `SPEC_FILE = specs/001-online-pvp-1a2b/spec.md`
 
 決策：
 - 直接沿用 `specs/001-online-pvp-1a2b/spec.md`

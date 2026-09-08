@@ -96,7 +96,7 @@
 # Rule 4 - 產品範圍已拍板的不得重問；BDD techstack、測試策略、系統有哪些端不算在內
 
 - Level: `SHOULD`
-- 當 `/specify` 已在 `spec.md` 中明確拍板產品功能邊界、第一版做／不做、成功標準或業務限制時，`technical-research` 應直接沿用，不應把同一產品問題再次交給 `/axb-clarify`。
+- 當 `/axb-specify` 已在 `spec.md` 中明確拍板產品功能邊界、第一版做／不做、成功標準或業務限制時，`technical-research` 應直接沿用，不應把同一產品問題再次交給 `/axb-clarify`。
 - 下列三題即使 `spec.md` 假設或範圍已經寫了答案，仍必須依 `rules/AIxBDD必問問題與起始專案介面澄清判準.md` 處理，不得用本條跳過：
   - BDD techstack
   - 測試策略
