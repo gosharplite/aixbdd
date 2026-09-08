@@ -39,7 +39,7 @@ In short: **it's a prompt-engineering framework that turns AI-assisted developme
 
 ---
 
-# AIBDD
+# AIBDD (Original README from the origin repo — [Waterball-Software-Academy/aixbdd](https://github.com/Waterball-Software-Academy/aixbdd))
 
 > PM 用 Gherkin 定義驗收標準，RD 把它落地成自動化測試，一氣呵成開發出正確的系統。
 
