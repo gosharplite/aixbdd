@@ -31,7 +31,7 @@ Supporting skills: `/axb-clarify` (user interviews), `/axb-truth-delta` (truth c
 
 ## Notes
 
-- **Agents**: includes `agents/pm.yaml` and `agents/rd.yaml` role configs
+- **Roles**: includes `roles/pm.yaml` and `roles/rd.yaml` role configs
 - **Provenance**: Apache 2.0, by Waterball Agent Limited (2026); some skills (specify, clarify-over-specs, tasks, implement, technical-research) are adapted from [GitHub Spec Kit](https://github.com/github/spec-kit) (MIT)
 - Skills are meant to live in `.agents/skills/` (with `.claude/skills` symlinked to it) in a consuming project — this repo is the skill source/registry itself, not an application
 
